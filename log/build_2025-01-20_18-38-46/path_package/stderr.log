@@ -1,0 +1,8 @@
+[31mCMake Error at CMakeLists.txt:8 (add_subdirectory):
+  The source directory
+
+    /home/gim/ros2_humble/src/path_package/src/CDT
+
+  does not contain a CMakeLists.txt file.
+
+[0m

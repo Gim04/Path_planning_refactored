@@ -1,0 +1,10 @@
+[0.018s] Invoking command in '/home/gim/ros2_humble/src/path_package/build/path_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gim/ros2_humble/src/path_package/build/path_package -- -j6 -l6
+[0.077s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/path.cpp.o[0m
+[0.088s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:245:10:[m[K [01;31m[Kfatal error: [m[KCDT.h: No such file or directory
+[0.088s]   245 | #include [01;31m[K"CDT.h"[m[K
+[0.088s]       |          [01;31m[K^~~~~~~[m[K
+[0.088s] compilation terminated.
+[0.094s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/path.cpp.o] Error 1
+[0.094s] gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/talker.dir/all] Error 2
+[0.094s] gmake: *** [Makefile:146: all] Error 2
+[0.099s] Invoked command in '/home/gim/ros2_humble/src/path_package/build/path_package' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gim/ros2_humble/src/path_package/build/path_package -- -j6 -l6

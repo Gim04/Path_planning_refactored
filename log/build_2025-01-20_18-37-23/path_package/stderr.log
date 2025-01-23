@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:8 (add_subdirectory):
+  add_subdirectory given source "../CDT" which is not an existing directory.
+
+[0m

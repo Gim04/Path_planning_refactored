@@ -1,0 +1,51 @@
+[35m[1mConsolidate compiler generated dependencies of target talker[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/path.cpp.o[0m
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:246:29:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+  246 | class LoadDataNode : public [01;31m[Krclcpp[m[K::Node {
+      |                             [01;31m[K^~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:246:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[KNode[m[K’
+  246 | class LoadDataNode : public rclcpp::[01;31m[KNode[m[K {
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:247:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+  247 | [01;31m[Kpublic[m[K:
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:247:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kpublic[m[K’
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:246:42:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  246 | class LoadDataNode : public rclcpp::Node [01;36m[K{[m[K
+      |                                          [01;36m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:276:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  276 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:293:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+  293 |     [01;31m[Krclcpp[m[K::init(argc, argv);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:295:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+  295 |     [01;31m[Krclcpp[m[K::spin(node);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:296:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+  296 |     [01;31m[Krclcpp[m[K::shutdown();
+      |     [01;31m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/unordered_map:42[m[K,
+                 from [01m[K/usr/include/c++/11/functional:61[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/CDTUtils.h:43[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/CDT.h:13[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:245[m[K:
+/usr/include/c++/11/ext/aligned_buffer.h: In instantiation of ‘[01m[Kstruct __gnu_cxx::__aligned_buffer<LoadDataNode>[m[K’:
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:506:35:[m[K   required from ‘[01m[Kclass std::_Sp_counted_ptr_inplace<LoadDataNode, std::allocator<LoadDataNode>, __gnu_cxx::_S_atomic>::_Impl[m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:567:13:[m[K   required from ‘[01m[Kclass std::_Sp_counted_ptr_inplace<LoadDataNode, std::allocator<LoadDataNode>, __gnu_cxx::_S_atomic>[m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:647:43:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = LoadDataNode; _Alloc = std::allocator<LoadDataNode>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<LoadDataNode>; _Args = {}; _Tp = LoadDataNode; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<LoadDataNode>; _Args = {}; _Tp = LoadDataNode][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = LoadDataNode; _Alloc = std::allocator<LoadDataNode>; _Args = {}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = LoadDataNode; _Args = {}][m[K’
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:294:47:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/aligned_buffer.h:91:28:[m[K [01;31m[Kerror: [m[Kinvalid application of ‘[01m[Ksizeof[m[K’ to incomplete type ‘[01m[KLoadDataNode[m[K’
+   91 |     : std::aligned_storage<[01;31m[Ksizeof(_Tp)[m[K, __alignof__(_Tp)>
+      |                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/ext/aligned_buffer.h:91:28:[m[K [01;31m[Kerror: [m[Kinvalid application of ‘[01m[Ksizeof[m[K’ to incomplete type ‘[01m[KLoadDataNode[m[K’
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/path.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

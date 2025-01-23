@@ -1,0 +1,18 @@
+[0.051s] Invoking command in '/home/gim/ros2_humble/src/path_package/build/path_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gim/ros2_humble/src/path_package/build/path_package -- -j6 -l6
+[0.473s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.640s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/path.cpp.o[0m
+[1.203s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[1.203s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:267:32:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KCDT::Triangulation<double> cdt[m[K’
+[1.203s]   267 |     CDT::Triangulation<double> [01;31m[Kcdt[m[K;
+[1.203s]       |                                [01;31m[K^~~[m[K
+[1.203s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:262:32:[m[K [01;36m[Knote: [m[K‘[01m[KCDT::Triangulation<double> cdt[m[K’ previously declared here
+[1.203s]   262 |     CDT::Triangulation<double> [01;36m[Kcdt[m[K;
+[1.203s]       |                                [01;36m[K^~~[m[K
+[1.203s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:271:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpoints[m[K’ was not declared in this scope; did you mean ‘[01m[Kprintf[m[K’?
+[1.203s]   271 |         [01;31m[Kpoints[m[K.begin(),    points.end(),    [](const CustomPoint2D& p){ return p.data[0]; },
+[1.203s]       |         [01;31m[K^~~~~~[m[K
+[1.203s]       |         [32m[Kprintf[m[K
+[1.572s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/path.cpp.o] Error 1
+[1.578s] gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/talker.dir/all] Error 2
+[1.592s] gmake: *** [Makefile:146: all] Error 2
+[1.704s] Invoked command in '/home/gim/ros2_humble/src/path_package/build/path_package' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gim/ros2_humble/src/path_package/build/path_package -- -j6 -l6

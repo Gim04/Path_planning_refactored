@@ -1,0 +1,4 @@
+Invoking command in '/home/gim/ros2_humble/src/path_package/build/path_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gim/ros2_humble/src/path_package -DCMAKE_INSTALL_PREFIX=/home/gim/ros2_humble/src/path_package/install/path_package
+Invoked command in '/home/gim/ros2_humble/src/path_package/build/path_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gim/ros2_humble/src/path_package -DCMAKE_INSTALL_PREFIX=/home/gim/ros2_humble/src/path_package/install/path_package
+Invoking command in '/home/gim/ros2_humble/src/path_package/build/path_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gim/ros2_humble/src/path_package/build/path_package -- -j6 -l6
+Invoked command in '/home/gim/ros2_humble/src/path_package/build/path_package' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gim/ros2_humble/src/path_package/build/path_package -- -j6 -l6

@@ -1,0 +1,11 @@
+[0.034s] Invoking command in '/home/gim/ros2_humble/src/path_package/build/path_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gim/ros2_humble/src/path_package/build/path_package -- -j6 -l6
+[0.199s] [35m[1mConsolidate compiler generated dependencies of target path_pkg[0m
+[0.282s] [ 50%] [32mBuilding CXX object CMakeFiles/path_pkg.dir/src/path.cpp.o[0m
+[0.952s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:28:10:[m[K [01;31m[Kfatal error: [m[KEigen/Dense: No such file or directory
+[0.952s]    28 | #include [01;31m[K<Eigen/Dense>[m[K
+[0.952s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[0.952s] compilation terminated.
+[0.954s] gmake[2]: *** [CMakeFiles/path_pkg.dir/build.make:76: CMakeFiles/path_pkg.dir/src/path.cpp.o] Error 1
+[0.954s] gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/path_pkg.dir/all] Error 2
+[0.954s] gmake: *** [Makefile:146: all] Error 2
+[0.959s] Invoked command in '/home/gim/ros2_humble/src/path_package/build/path_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/gim/ros2_humble/src/path_package/build/path_package -- -j6 -l6

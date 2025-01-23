@@ -1,0 +1,23 @@
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:249:19:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KCDT::Triangulation<double>::insertVertices(<brace-enclosed initializer list>, <brace-enclosed initializer list>, <brace-enclosed initializer list>)[m[K’
+  249 | [01;31m[Kcdt.insertVertices({1,1},{2,2},{3,2})[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/CDT.h:14[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:245[m[K:
+[01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/Triangulation.h:335:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class TVertexIter, class TGetVertexCoordX, class TGetVertexCoordY> void CDT::Triangulation<T, TNearPointLocator>::insertVertices(TVertexIter, TVertexIter, TGetVertexCoordX, TGetVertexCoordY) [with TVertexIter = TVertexIter; TGetVertexCoordX = TGetVertexCoordX; TGetVertexCoordY = TGetVertexCoordY; T = double; TNearPointLocator = CDT::LocatorKDTree<double, 32, 32, 32>][m[K’
+  335 |     void [01;36m[KinsertVertices[m[K(
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/Triangulation.h:335:10:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:249:19:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+  249 | [01;36m[Kcdt.insertVertices({1,1},{2,2},{3,2})[m[K;
+      | [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/Triangulation.h:942[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/CDT.h:14[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:245[m[K:
+[01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/Triangulation.hpp:1720:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid CDT::Triangulation<T, TNearPointLocator>::insertVertices(const std::vector<CDT::V2d<T> >&) [with T = double; TNearPointLocator = CDT::LocatorKDTree<double, 32, 32, 32>][m[K’
+ 1720 | void [01;36m[KTriangulation<T, TNearPointLocator>[m[K::insertVertices(
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/Triangulation.hpp:1720:6:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/path.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

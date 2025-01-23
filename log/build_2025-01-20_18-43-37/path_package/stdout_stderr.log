@@ -1,0 +1,67 @@
+-- CDT_USE_AS_COMPILED_LIBRARY is OFF
+-- CDT_USE_64_BIT_INDEX_TYPE is OFF
+-- CDT_ENABLE_TESTING is OFF
+-- CDT_USE_STRONG_TYPING is OFF
+-- CDT_DEVELOPER_BUILD is OFF
+-- Doxygen found: adding documentation target.
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gim/ros2_humble/src/path_package/build/path_package
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/path.cpp.o[0m
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:249:19:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KCDT::Triangulation<double>::insertVertices(<brace-enclosed initializer list>)[m[K’
+  249 | [01;31m[Kcdt.insertVertices({1,1})[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/CDT.h:14[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:245[m[K:
+[01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/Triangulation.h:335:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class TVertexIter, class TGetVertexCoordX, class TGetVertexCoordY> void CDT::Triangulation<T, TNearPointLocator>::insertVertices(TVertexIter, TVertexIter, TGetVertexCoordX, TGetVertexCoordY) [with TVertexIter = TVertexIter; TGetVertexCoordX = TGetVertexCoordX; TGetVertexCoordY = TGetVertexCoordY; T = double; TNearPointLocator = CDT::LocatorKDTree<double, 32, 32, 32>][m[K’
+  335 |     void [01;36m[KinsertVertices[m[K(
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/Triangulation.h:335:10:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:249:19:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+  249 | [01;36m[Kcdt.insertVertices({1,1})[m[K;
+      | [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/Triangulation.h:942[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/CDT.h:14[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:245[m[K:
+[01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/Triangulation.hpp:1720:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid CDT::Triangulation<T, TNearPointLocator>::insertVertices(const std::vector<CDT::V2d<T> >&) [with T = double; TNearPointLocator = CDT::LocatorKDTree<double, 32, 32, 32>][m[K’
+ 1720 | void [01;36m[KTriangulation<T, TNearPointLocator>[m[K::insertVertices(
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include/Triangulation.hpp:1721:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::vector<CDT::V2d<double>, std::allocator<CDT::V2d<double> > >&[m[K’
+ 1721 |     [01;36m[Kconst std::vector<V2d<T> >& newVertices[m[K)
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:251:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+  251 | /* access triangles */ [01;31m[K=[m[K cdt.triangles;
+      |                        [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:252:23:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+  252 | /* access vertices */ [01;31m[K=[m[K cdt.vertices;
+      |                       [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:253:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+  253 | /* access boundary (fixed) edges */ [01;31m[K=[m[K cdt.fixedEdges;
+      |                                     [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:254:39:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+  254 | /* calculate all edges (on demand) */ [01;31m[K=[m[K CDT::extractEdgesFromTriangles(cdt.triangles);
+      |                                       [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/path.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

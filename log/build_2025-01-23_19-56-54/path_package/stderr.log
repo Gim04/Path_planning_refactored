@@ -1,0 +1,517 @@
+In file included from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:32[m[K:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.h:1:13:[m[K [01;35m[Kwarning: [m[Kextra tokens at end of #ifndef directive
+    1 | #ifndef path[01;35m[K.[m[Kh
+      |             [01;35m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In constructor ‘[01m[KLoadDataNode::LoadDataNode()[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:56:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kleng_[m[K’ was not declared in this scope
+   56 |         [01;31m[Kleng_[m[K = this->get_parameter("Look_ahead_value").as_double();
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksearch_region_[m[K’ was not declared in this scope
+   57 |         [01;31m[Ksearch_region_[m[K = this->get_parameter("search_region_value").as_int();
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:58:9:[m[K [01;31m[Kerror: [m[K‘[01m[Keval_length_[m[K’ was not declared in this scope
+   58 |         [01;31m[Keval_length_[m[K = this->get_parameter("eval_length_value").as_int();
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[KnumWaypoints_to_spline_[m[K’ was not declared in this scope
+   59 |         [01;31m[KnumWaypoints_to_spline_[m[K = this->get_parameter("numWaypoints_to_spline_value").as_int();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:60:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kspline_curvature_constrain_[m[K’ was not declared in this scope
+   60 |         [01;31m[Kspline_curvature_constrain_[m[K = this->get_parameter("Spline_curvature_constrain_value").as_int();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[KVmax_[m[K’ was not declared in this scope
+   61 |         [01;31m[KVmax_[m[K = this->get_parameter("Max_Velocity_value").as_double();
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:62:9:[m[K [01;31m[Kerror: [m[K‘[01m[KVmin_[m[K’ was not declared in this scope
+   62 |         [01;31m[KVmin_[m[K = this->get_parameter("Min_Velocity_value").as_double();
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:63:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCmax_[m[K’ was not declared in this scope
+   63 |         [01;31m[KRCmax_[m[K = this->get_parameter("Max_curvature_value").as_int();
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:64:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilter_param_distance_[m[K’ was not declared in this scope
+   64 |         [01;31m[Kfilter_param_distance_[m[K = this->get_parameter("Cones_filter_param_distance").as_double();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:65:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilter_param_y_[m[K’ was not declared in this scope
+   65 |         [01;31m[Kfilter_param_y_[m[K = this->get_parameter("Cones_filter_param_y").as_double();
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:66:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_spline_degree_[m[K’ was not declared in this scope
+   66 |         [01;31m[Kmax_spline_degree_[m[K = this->get_parameter("Max_spline_degree").as_int();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:68:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoint_threshold_[m[K’ was not declared in this scope
+   68 |         [01;31m[Kwaypoint_threshold_[m[K = 6;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:69:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kspecial_case_[m[K’ was not declared in this scope
+   69 |         [01;31m[Kspecial_case_[m[K = 0;
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:70:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kspline_degree_[m[K’ was not declared in this scope
+   70 |         [01;31m[Kspline_degree_[m[K = 1;
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:71:9:[m[K [01;31m[Kerror: [m[K‘[01m[KSpecialActivated_[m[K’ was not declared in this scope
+   71 |         [01;31m[KSpecialActivated_[m[K = false;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:72:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kla_dyn_[m[K’ was not declared in this scope
+   72 |         [01;31m[Kla_dyn_[m[K = (leng_ == 0.0);
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:73:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpred_eval_length_[m[K’ was not declared in this scope
+   73 |         [01;31m[Kpred_eval_length_[m[K = 20;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:74:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kavg_curvature_[m[K’ was not declared in this scope
+   74 |         [01;31m[Kavg_curvature_[m[K = 5.0;
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:75:9:[m[K [01;31m[Kerror: [m[K‘[01m[Karclen_minore_[m[K’ was not declared in this scope
+   75 |         [01;31m[Karclen_minore_[m[K = false;
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:94:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_cones_[m[K’ was not declared in this scope
+   94 |         [01;31m[Ksubscription_cones_[m[K = this->create_subscription<zed_msgs::msg::Cones>(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:94:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kzed_msgs[m[K’ was not declared in this scope
+   94 |         subscription_cones_ = this->create_subscription<[01;31m[Kzed_msgs[m[K::msg::Cones>(
+      |                                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:94:37:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   94 |         subscription_cones_ = this->[01;31m[Kcreate_subscription<zed_msgs::msg::Cones>[m[K(
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1[m[K:
+/usr/include/c++/11/functional: In instantiation of ‘[01m[Kstruct std::_Bind_check_arity<void (LoadDataNode::*)(), LoadDataNode*, const std::_Placeholder<1>&>[m[K’:
+[01m[K/usr/include/c++/11/functional:768:12:[m[K   required from ‘[01m[Kstruct std::_Bind_helper<false, void (LoadDataNode::*)(), LoadDataNode*, const std::_Placeholder<1>&>[m[K’
+[01m[K/usr/include/c++/11/functional:789:5:[m[K   required by substitution of ‘[01m[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (LoadDataNode::*)(); _BoundArgs = {LoadDataNode*, const std::_Placeholder<1>&}][m[K’
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:95:52:[m[K   required from here
+[01m[K/usr/include/c++/11/functional:756:21:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Wrong number of arguments for pointer-to-member
+  755 |       static_assert(_Varargs::[01;31m[Kvalue[m[K
+      |                               [01;31m[K~~~~~[m[K
+  756 | [01;31m[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1[m[K
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  757 | [01;31m[K                    : sizeof...(_BoundArgs) == _Arity::value + 1[m[K,
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/functional:756:21:[m[K [01;36m[Knote: [m[K‘[01m[K(false ? (2 >= (((long unsigned int)std::integral_constant<long unsigned int, 0>::value) + 1)) : (2 == (((long unsigned int)std::integral_constant<long unsigned int, 0>::value) + 1)))[m[K’ evaluates to false
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:94:78:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLoadDataNode::create_subscription<<expression error> >(const char [24], int, std::_Bind_helper<false, void (LoadDataNode::*)(), LoadDataNode*, const std::_Placeholder<1>&>::type)[m[K’
+   94 |  subscription_cones_ = [01;31m[Kthis->create_subscription<zed_msgs::msg::Cones>([m[K
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   95 | [01;31m[K     "/zed2i/topic_bbox_zed3d", 1, std::bind(&LoadDataNode::timer_callback, this, _1))[m[K;
+      |      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:94:78:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   94 |  subscription_cones_ = [01;31m[Kthis->create_subscription<zed_msgs::msg::Cones>([m[K
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   95 | [01;31m[K     "/zed2i/topic_bbox_zed3d", 1, std::bind(&LoadDataNode::timer_callback, this, _1))[m[K;
+      |      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:98:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_waypoints_[m[K’ was not declared in this scope
+   98 |         [01;31m[Kpublisher_waypoints_[m[K = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoints", 1);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:98:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ was not declared in this scope
+   98 |         publisher_waypoints_ = this->create_publisher<[01;31m[Kcontrol_msgs[m[K::msg::WaypointArrayStamped>("Waypoints", 1);
+      |                                                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:98:38:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   98 |         publisher_waypoints_ = this->[01;31m[Kcreate_publisher<control_msgs::msg::WaypointArrayStamped>[m[K("Waypoints", 1);
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:98:95:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLoadDataNode::create_publisher<<expression error> >(const char [10], int)[m[K’
+   98 | [01;31m[Ks->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoints", 1)[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:98:95:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   98 | [01;31m[Ks->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoints", 1)[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:100:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_ref_waypoint_[m[K’ was not declared in this scope
+  100 |         [01;31m[Kpublisher_ref_waypoint_[m[K = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoint_filtered", 1);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:100:41:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  100 |         publisher_ref_waypoint_ = this->[01;31m[Kcreate_publisher<control_msgs::msg::WaypointArrayStamped>[m[K("Waypoint_filtered", 1);
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:100:98:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLoadDataNode::create_publisher<control_msgs>(const char [18], int)[m[K’
+  100 | [01;31m[Ks->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoint_filtered", 1)[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:101:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_spline_points_[m[K’ was not declared in this scope
+  101 |         [01;31m[Kpublisher_spline_points_[m[K = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Spline_Points", 1);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:101:42:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  101 |         publisher_spline_points_ = this->[01;31m[Kcreate_publisher<control_msgs::msg::WaypointArrayStamped>[m[K("Spline_Points", 1);
+      |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:101:99:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLoadDataNode::create_publisher<control_msgs>(const char [14], int)[m[K’
+  101 | [01;31m[Ks->create_publisher<control_msgs::msg::WaypointArrayStamped>("Spline_Points", 1)[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:102:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_special_case_[m[K’ was not declared in this scope
+  102 |         [01;31m[Kpublisher_special_case_[m[K = this->create_publisher<path_interfaces::msg::Pubxy>("Special_case", 1);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:102:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+  102 |         publisher_special_case_ = this->create_publisher<[01;31m[Kpath_interfaces[m[K::msg::Pubxy>("Special_case", 1);
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                          [32m[Krcl_interfaces[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:102:41:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  102 |         publisher_special_case_ = this->[01;31m[Kcreate_publisher<path_interfaces::msg::Pubxy>[m[K("Special_case", 1);
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:102:86:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLoadDataNode::create_publisher<<expression error> >(const char [13], int)[m[K’
+  102 | _case_ = [01;31m[Kthis->create_publisher<path_interfaces::msg::Pubxy>("Special_case", 1)[m[K;
+      |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:102:86:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  102 | _case_ = [01;31m[Kthis->create_publisher<path_interfaces::msg::Pubxy>("Special_case", 1)[m[K;
+      |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:103:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_velocity_[m[K’ was not declared in this scope
+  103 |         [01;31m[Kpublisher_velocity_[m[K = this->create_publisher<control_msgs::msg::RefData>("ReferenceData", 1);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:103:37:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  103 |         publisher_velocity_ = this->[01;31m[Kcreate_publisher<control_msgs::msg::RefData>[m[K("ReferenceData", 1);
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:103:81:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLoadDataNode::create_publisher<control_msgs>(const char [14], int)[m[K’
+  103 | locity_ = [01;31m[Kthis->create_publisher<control_msgs::msg::RefData>("ReferenceData", 1)[m[K;
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:104:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_filtered_cones_[m[K’ was not declared in this scope
+  104 |         [01;31m[Kpublisher_filtered_cones_[m[K = this->create_publisher<zed_msgs::msg::Cones>("Filtered_Cones", 1);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:104:43:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  104 |         publisher_filtered_cones_ = this->[01;31m[Kcreate_publisher<zed_msgs::msg::Cones>[m[K("Filtered_Cones", 1);
+      |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:104:81:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLoadDataNode::create_publisher<zed_msgs>(const char [15], int)[m[K’
+  104 | ltered_cones_ = [01;31m[Kthis->create_publisher<zed_msgs::msg::Cones>("Filtered_Cones", 1)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In member function ‘[01m[Kvoid LoadDataNode::timer_callback()[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:111:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_package[m[K’ has not been declared
+  111 |         [01;31m[Kmy_package[m[K::msg::Cones filtered_cones;
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:114:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg_cones[m[K’ was not declared in this scope
+  114 |         for (const auto &cone : [01;31m[Kmsg_cones[m[K.big_orange_cones)
+      |                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:120:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg_cones[m[K’ was not declared in this scope
+  120 |         for (const auto &cone : [01;31m[Kmsg_cones[m[K.little_orange_cones)
+      |                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:136:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg_cones[m[K’ was not declared in this scope
+  136 |         for (const auto &cone : [01;31m[Kmsg_cones[m[K.blue_cones)
+      |                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:138:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilter_param_y_[m[K’ was not declared in this scope
+  138 |             if (std::abs(cone.y) < [01;31m[Kfilter_param_y_[m[K && std::sqrt(cone.x * cone.x + cone.y * cone.y) < filter_param_distance_)
+      |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:138:102:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilter_param_distance_[m[K’ was not declared in this scope
+  138 | _param_y_ && std::sqrt(cone.x * cone.x + cone.y * cone.y) < [01;31m[Kfilter_param_distance_[m[K)
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:145:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg_cones[m[K’ was not declared in this scope
+  145 |         for (const auto &cone : [01;31m[Kmsg_cones[m[K.yellow_cones)
+      |                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:147:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilter_param_y_[m[K’ was not declared in this scope
+  147 |             if (std::abs(cone.y) < [01;31m[Kfilter_param_y_[m[K && std::sqrt(cone.x * cone.x + cone.y * cone.y) < filter_param_distance_)
+      |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:147:102:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilter_param_distance_[m[K’ was not declared in this scope
+  147 | _param_y_ && std::sqrt(cone.x * cone.x + cone.y * cone.y) < [01;31m[Kfilter_param_distance_[m[K)
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:157:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_package[m[K’ has not been declared
+  157 |             [01;31m[Kmy_package[m[K::msg::Cone little_orange_cone;
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:158:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klittle_orange_cone[m[K’ was not declared in this scope
+  158 |             [01;31m[Klittle_orange_cone[m[K.cone_type = 3;
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:162:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfiltered_cones[m[K’ was not declared in this scope
+  162 |             [01;31m[Kfiltered_cones[m[K.little_orange_cones.push_back(little_orange_cone);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:167:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_package[m[K’ has not been declared
+  167 |             [01;31m[Kmy_package[m[K::msg::Cone big_orange_cone;
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:168:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kbig_orange_cone[m[K’ was not declared in this scope
+  168 |             [01;31m[Kbig_orange_cone[m[K.cone_type = 1;
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:172:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfiltered_cones[m[K’ was not declared in this scope
+  172 |             [01;31m[Kfiltered_cones[m[K.big_orange_cones.push_back(big_orange_cone);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:177:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_package[m[K’ has not been declared
+  177 |             [01;31m[Kmy_package[m[K::msg::Cone blue_cone;
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:178:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kblue_cone[m[K’ was not declared in this scope
+  178 |             [01;31m[Kblue_cone[m[K.cone_type = 2;
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:182:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfiltered_cones[m[K’ was not declared in this scope
+  182 |             [01;31m[Kfiltered_cones[m[K.blue_cones.push_back(blue_cone);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:187:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_package[m[K’ has not been declared
+  187 |             [01;31m[Kmy_package[m[K::msg::Cone yellow_cone;
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:188:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kyellow_cone[m[K’ was not declared in this scope
+  188 |             [01;31m[Kyellow_cone[m[K.cone_type = 4;
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:192:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfiltered_cones[m[K’ was not declared in this scope
+  192 |             [01;31m[Kfiltered_cones[m[K.yellow_cones.push_back(yellow_cone);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:200:17:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypoints[m[K’ was not declared in this scope
+  200 |                 [01;31m[KWaypoints[m[K = delaunayCalculation();
+      |                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:200:29:[m[K [01;31m[Kerror: [m[K‘[01m[KdelaunayCalculation[m[K’ was not declared in this scope
+  200 |                 Waypoints = [01;31m[KdelaunayCalculation[m[K();
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:205:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_spline_degree_[m[K’ was not declared in this scope
+  205 |         spline([01;31m[Kmax_spline_degree_[m[K, Waypoints);
+      |                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:205:36:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypoints[m[K’ was not declared in this scope
+  205 |         spline(max_spline_degree_, [01;31m[KWaypoints[m[K);
+      |                                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:205:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kspline[m[K’ was not declared in this scope
+  205 |         [01;31m[Kspline[m[K(max_spline_degree_, Waypoints);
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:209:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+  209 |         [01;31m[Kpublisher_[m[K->publish(filtered_cones);
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:209:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kfiltered_cones[m[K’ was not declared in this scope
+  209 |         publisher_->publish([01;31m[Kfiltered_cones[m[K);
+      |                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K At global scope:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:214:32:[m[K [01;31m[Kerror: [m[Kinvalid declarator before ‘[01m[KdelaunayCalculation[m[K’
+  214 |     std::vector<CustomPoint2D> [01;31m[KdelaunayCalculation[m[K() {
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kglm[m[K’ was not declared in this scope
+  280 |     std::vector<[01;31m[Kglm[m[K::vec2> spline(const max_spline_degree_, const <std::pair<double, double>>Waypoints) {
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  280 |     std::vector<glm::vec2[01;31m[K>[m[K spline(const max_spline_degree_, const <std::pair<double, double>>Waypoints) {
+      |                          [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_spline_degree_[m[K’ does not name a type
+  280 |     std::vector<glm::vec2> spline(const [01;31m[Kmax_spline_degree_[m[K, const <std::pair<double, double>>Waypoints) {
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:61:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kparameter[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  280 |     std::vector<glm::vec2> spline(const max_spline_degree_, [01;31m[Kconst[m[K <std::pair<double, double>>Waypoints) {
+      |                                                             [01;31m[K^~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+  280 | d::vector<glm::vec2> spline(const max_spline_degree_, const [01;31m[K<[m[Kstd::pair<double, double>>Waypoints) {
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kint spline(int, int)[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:282:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_spline_degree_[m[K’ was not declared in this scope
+  282 |     if ([01;31m[Kmax_spline_degree_[m[K != 2)
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:287:26:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypoints[m[K’ was not declared in this scope
+  287 |     for (const auto& p : [01;31m[KWaypoints[m[K) {
+      |                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:293:27:[m[K [01;31m[Kerror: [m[K‘[01m[KWaypoints[m[K’ was not declared in this scope
+  293 |     std::vector<double> t([01;31m[KWaypoints[m[K.size());
+      |                           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:300:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_spline_degree_[m[K’ was not declared in this scope
+  300 |     spapi([01;31m[Kmax_spline_degree_[m[K, x, spline_x);
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:300:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kspapi[m[K’ was not declared in this scope
+  300 |     [01;31m[Kspapi[m[K(max_spline_degree_, x, spline_x);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:304:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kfnval[m[K’ was not declared in this scope
+  304 |     double x_end = [01;31m[Kfnval[m[K(spline_x, 1.0);
+      |                    [01;31m[K^~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:306:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kglm[m[K’ has not been declared
+  306 |     [01;31m[Kglm[m[K::vec2 punto_fine(x_end, y_end);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:329:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kglm[m[K’ was not declared in this scope
+  329 |     std::vector<[01;31m[Kglm[m[K::vec2> punti_aggiornati = Waypoints;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:329:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  329 |     std::vector<glm::vec2[01;31m[K>[m[K punti_aggiornati = Waypoints;
+      |                          [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:329:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:330:22:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kpunti_aggiornati[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  330 |     punti_aggiornati.[01;31m[Kpush_back[m[K(cono_scelto);
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:330:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kcono_scelto[m[K’ was not declared in this scope
+  330 |     punti_aggiornati.push_back([01;31m[Kcono_scelto[m[K);
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:304:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx_end[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  304 |     double [01;35m[Kx_end[m[K = fnval(spline_x, 1.0);
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:305:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky_end[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  305 |     double [01;35m[Ky_end[m[K = fnval(spline_y, 1.0);
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kvoid publish_spline_points(const std::vector<std::vector<float> >&)[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:342:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ has not been declared
+  342 |         auto msg = [01;31m[Kcontrol_msgs[m[K::msg::WaypointArrayStamped();
+      |                    [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:347:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ has not been declared
+  347 |             auto spline_point = [01;31m[Kcontrol_msgs[m[K::msg::Waypoint();
+      |                                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:354:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_spline_points_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish_spline_points[m[K’?
+  354 |         [01;31m[Kpublisher_spline_points_[m[K->publish(msg);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kpublish_spline_points[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kvoid publish_waypoints(std::vector<std::pair<double, double> >)[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:359:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ has not been declared
+  359 |         auto msg = [01;31m[Kcontrol_msgs[m[K::msg::WaypointArrayStamped();
+      |                    [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:363:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ has not been declared
+  363 |             auto waypoint = [01;31m[Kcontrol_msgs[m[K::msg::Waypoint();
+      |                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:364:47:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst std::pair<double, double>[m[K’} and ‘[01m[Kint[m[K’)
+  364 |             waypoint.position.x = Waypoints[i][01;31m[K[[m[K0];
+      |                                               [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:365:47:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator[][m[K’ (operand types are ‘[01m[Kconst value_type[m[K’ {aka ‘[01m[Kconst std::pair<double, double>[m[K’} and ‘[01m[Kint[m[K’)
+  365 |             waypoint.position.y = Waypoints[i][01;31m[K[[m[K1];
+      |                                               [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:369:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_waypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish_waypoints[m[K’?
+  369 |         [01;31m[Kpublisher_waypoints_[m[K->publish(msg);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kpublish_waypoints[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K At global scope:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:394:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_package[m[K’ does not name a type
+  394 |     [01;31m[Kmy_package[m[K::msg::Cones filtered_cones;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:395:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kglm[m[K’ was not declared in this scope
+  395 |     std::vector<[01;31m[Kglm[m[K::vec2> punti_aggiornati;
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:395:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  395 |     std::vector<glm::vec2[01;31m[K>[m[K punti_aggiornati;
+      |                          [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:395:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kzed_msgs[m[K’ was not declared in this scope
+  398 |     rclcpp::Subscription<[01;31m[Kzed_msgs[m[K::msg::Cones>::SharedPtr subscription_cones_;
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  398 |     rclcpp::Subscription<zed_msgs::msg::Cones[01;31m[K>[m[K::SharedPtr subscription_cones_;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:59:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Ksubscription_cones_[m[K’
+  398 |     rclcpp::Subscription<zed_msgs::msg::Cones>::SharedPtr [01;31m[Ksubscription_cones_[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:399:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ was not declared in this scope
+  399 |     rclcpp::Publisher<[01;31m[Kcontrol_msgs[m[K::msg::WaypointArrayStamped>::SharedPtr publisher_waypoints_;
+      |                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:399:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  399 |    rclcpp::Publisher<control_msgs::msg::WaypointArrayStamped[01;31m[K>[m[K::SharedPtr publisher_waypoints_;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:399:75:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kpublisher_waypoints_[m[K’
+  399 | blisher<control_msgs::msg::WaypointArrayStamped>::SharedPtr [01;31m[Kpublisher_waypoints_[m[K;
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:400:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+  400 |     rclcpp::Publisher<[01;31m[Kpath_interfaces[m[K::msg::WaypointsPlusCones>::SharedPtr publisher_wayspluscones_;
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                       [32m[Krcl_interfaces[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:400:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  400 |   rclcpp::Publisher<path_interfaces::msg::WaypointsPlusCones[01;31m[K>[m[K::SharedPtr publisher_wayspluscones_;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:400:76:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kpublisher_wayspluscones_[m[K’
+  400 | lisher<path_interfaces::msg::WaypointsPlusCones>::SharedPtr [01;31m[Kpublisher_wayspluscones_[m[K;
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:401:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ was not declared in this scope
+  401 |     rclcpp::Publisher<[01;31m[Kcontrol_msgs[m[K::msg::WaypointArrayStamped>::SharedPtr publisher_ref_waypoint_;
+      |                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:401:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  401 |    rclcpp::Publisher<control_msgs::msg::WaypointArrayStamped[01;31m[K>[m[K::SharedPtr publisher_ref_waypoint_;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:401:75:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kpublisher_ref_waypoint_[m[K’
+  401 | blisher<control_msgs::msg::WaypointArrayStamped>::SharedPtr [01;31m[Kpublisher_ref_waypoint_[m[K;
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:402:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ was not declared in this scope
+  402 |     rclcpp::Publisher<[01;31m[Kcontrol_msgs[m[K::msg::WaypointArrayStamped>::SharedPtr publisher_spline_points_;
+      |                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:402:62:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  402 |    rclcpp::Publisher<control_msgs::msg::WaypointArrayStamped[01;31m[K>[m[K::SharedPtr publisher_spline_points_;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:402:75:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kpublisher_spline_points_[m[K’
+  402 | blisher<control_msgs::msg::WaypointArrayStamped>::SharedPtr [01;31m[Kpublisher_spline_points_[m[K;
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:403:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+  403 |     rclcpp::Publisher<[01;31m[Kpath_interfaces[m[K::msg::Pubxy>::SharedPtr publisher_special_case_;
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                       [32m[Krcl_interfaces[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:403:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  403 |     rclcpp::Publisher<path_interfaces::msg::Pubxy[01;31m[K>[m[K::SharedPtr publisher_special_case_;
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:403:63:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kpublisher_special_case_[m[K’
+  403 |   rclcpp::Publisher<path_interfaces::msg::Pubxy>::SharedPtr [01;31m[Kpublisher_special_case_[m[K;
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:404:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ was not declared in this scope
+  404 |     rclcpp::Publisher<[01;31m[Kcontrol_msgs[m[K::msg::RefData>::SharedPtr publisher_velocity_;
+      |                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:404:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  404 |     rclcpp::Publisher<control_msgs::msg::RefData[01;31m[K>[m[K::SharedPtr publisher_velocity_;
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:404:62:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kpublisher_velocity_[m[K’
+  404 |    rclcpp::Publisher<control_msgs::msg::RefData>::SharedPtr [01;31m[Kpublisher_velocity_[m[K;
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:405:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kzed_msgs[m[K’ was not declared in this scope
+  405 |     rclcpp::Publisher<[01;31m[Kzed_msgs[m[K::msg::Cones>::SharedPtr publisher_filtered_cones_;
+      |                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:405:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  405 |     rclcpp::Publisher<zed_msgs::msg::Cones[01;31m[K>[m[K::SharedPtr publisher_filtered_cones_;
+      |                                           [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:405:56:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kpublisher_filtered_cones_[m[K’
+  405 |     rclcpp::Publisher<zed_msgs::msg::Cones>::SharedPtr [01;31m[Kpublisher_filtered_cones_[m[K;
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:406:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  406 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/path_pkg.dir/build.make:76: CMakeFiles/path_pkg.dir/src/path.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/path_pkg.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

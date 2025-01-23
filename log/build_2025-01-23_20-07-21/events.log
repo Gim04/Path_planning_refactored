@@ -1,0 +1,583 @@
+[0.000000] (-) TimerEvent: {}
+[0.000000] (path_package) JobQueued: {'identifier': 'path_package', 'dependencies': OrderedDict()}
+[0.006000] (path_package) JobStarted: {'identifier': 'path_package'}
+[0.028000] (path_package) JobProgress: {'identifier': 'path_package', 'progress': 'cmake'}
+[0.033000] (path_package) JobProgress: {'identifier': 'path_package', 'progress': 'build'}
+[0.038000] (path_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/gim/ros2_humble/src/path_package/build/path_package', '--', '-j6', '-l6'], 'cwd': '/home/gim/ros2_humble/src/path_package/build/path_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'gim'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/gim'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2753'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bcef8af4da52074bc0357b7667928ace'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/gim/ros2_humble/src/path_package/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'gim'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'gim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/gim-VirtualBox:@/tmp/.ICE-unix/2753,unix/gim-VirtualBox:/tmp/.ICE-unix/2753'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ab163c86_4ca1_4cf0_abd2_dfdb1e064853'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UL2X02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.200'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/gim/ros2_humble/src/path_package/install/path_package:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/gim/ros2_humble/src/path_package/build/path_package'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bcef8af4da52074bc0357b7667928ace'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/gim/ros2_humble/src/path_package/install/path_package:/opt/ros/humble')]), 'shell': False}
+[0.095000] (path_package) StdoutLine: {'line': b'-- CDT_USE_AS_COMPILED_LIBRARY is OFF\n'}
+[0.095000] (path_package) StdoutLine: {'line': b'-- CDT_USE_64_BIT_INDEX_TYPE is OFF\n'}
+[0.095000] (path_package) StdoutLine: {'line': b'-- CDT_ENABLE_TESTING is OFF\n'}
+[0.095000] (path_package) StdoutLine: {'line': b'-- CDT_USE_STRONG_TYPING is OFF\n'}
+[0.095000] (path_package) StdoutLine: {'line': b'-- CDT_DEVELOPER_BUILD is OFF\n'}
+[0.101000] (-) TimerEvent: {}
+[0.149999] (path_package) StdoutLine: {'line': b'-- Doxygen found: adding documentation target.\n'}
+[0.149999] (path_package) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.203999] (-) TimerEvent: {}
+[0.244999] (path_package) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.262999] (path_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.268999] (path_package) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.268999] (path_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.276999] (path_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.276999] (path_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.294999] (path_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.310998] (-) TimerEvent: {}
+[0.310998] (path_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.385998] (path_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.393998] (path_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.431998] (-) TimerEvent: {}
+[0.532997] (-) TimerEvent: {}
+[0.674997] (-) TimerEvent: {}
+[0.684997] (path_package) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.684997] (path_package) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/gim/ros2_humble/src/path_package/./src/CDT/CDT/include\n'}
+[0.684997] (path_package) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.694997] (path_package) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.712997] (path_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.723996] (path_package) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.724996] (path_package) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.789996] (-) TimerEvent: {}
+[0.791996] (path_package) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.791996] (path_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.805996] (path_package) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.838996] (path_package) StdoutLine: {'line': b'-- Generating done\n'}
+[0.848996] (path_package) StdoutLine: {'line': b'-- Build files have been written to: /home/gim/ros2_humble/src/path_package/build/path_package\n'}
+[0.879996] (path_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target path_pkg\x1b[0m\n'}
+[0.891996] (-) TimerEvent: {}
+[0.898996] (path_package) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/path_pkg.dir/src/path.cpp.o\x1b[0m\n'}
+[1.021995] (-) TimerEvent: {}
+[1.083995] (path_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:32\x1b[m\x1b[K:\n'}
+[1.083995] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.h:1:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra tokens at end of #ifndef directive\n'}
+[1.083995] (path_package) StderrLine: {'line': b'    1 | #ifndef path\x1b[01;35m\x1b[K.\x1b[m\x1b[Kh\n'}
+[1.083995] (path_package) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.122995] (-) TimerEvent: {}
+[1.252994] (-) TimerEvent: {}
+[1.372993] (-) TimerEvent: {}
+[1.552992] (-) TimerEvent: {}
+[1.682992] (-) TimerEvent: {}
+[1.793991] (-) TimerEvent: {}
+[1.947991] (-) TimerEvent: {}
+[2.052990] (-) TimerEvent: {}
+[2.153990] (-) TimerEvent: {}
+[2.259989] (-) TimerEvent: {}
+[2.449988] (-) TimerEvent: {}
+[2.605987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KLoadDataNode::LoadDataNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.608987] (-) TimerEvent: {}
+[2.608987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:56:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kleng_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.608987] (path_package) StderrLine: {'line': b'   56 |         \x1b[01;31m\x1b[Kleng_\x1b[m\x1b[K = this->get_parameter("Look_ahead_value").as_double();\n'}
+[2.608987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.608987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:57:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksearch_region_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.608987] (path_package) StderrLine: {'line': b'   57 |         \x1b[01;31m\x1b[Ksearch_region_\x1b[m\x1b[K = this->get_parameter("search_region_value").as_int();\n'}
+[2.608987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.608987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:58:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Keval_length_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.608987] (path_package) StderrLine: {'line': b'   58 |         \x1b[01;31m\x1b[Keval_length_\x1b[m\x1b[K = this->get_parameter("eval_length_value").as_int();\n'}
+[2.608987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.618987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:59:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KnumWaypoints_to_spline_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.618987] (path_package) StderrLine: {'line': b'   59 |         \x1b[01;31m\x1b[KnumWaypoints_to_spline_\x1b[m\x1b[K = this->get_parameter("numWaypoints_to_spline_value").as_int();\n'}
+[2.618987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.618987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:60:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kspline_curvature_constrain_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.618987] (path_package) StderrLine: {'line': b'   60 |         \x1b[01;31m\x1b[Kspline_curvature_constrain_\x1b[m\x1b[K = this->get_parameter("Spline_curvature_constrain_value").as_int();\n'}
+[2.618987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.618987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:61:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVmax_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.618987] (path_package) StderrLine: {'line': b'   61 |         \x1b[01;31m\x1b[KVmax_\x1b[m\x1b[K = this->get_parameter("Max_Velocity_value").as_double();\n'}
+[2.618987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.636987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:62:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVmin_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.636987] (path_package) StderrLine: {'line': b'   62 |         \x1b[01;31m\x1b[KVmin_\x1b[m\x1b[K = this->get_parameter("Min_Velocity_value").as_double();\n'}
+[2.636987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.639987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:63:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRCmax_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.639987] (path_package) StderrLine: {'line': b'   63 |         \x1b[01;31m\x1b[KRCmax_\x1b[m\x1b[K = this->get_parameter("Max_curvature_value").as_int();\n'}
+[2.639987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.644987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:64:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfilter_param_distance_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.644987] (path_package) StderrLine: {'line': b'   64 |         \x1b[01;31m\x1b[Kfilter_param_distance_\x1b[m\x1b[K = this->get_parameter("Cones_filter_param_distance").as_double();\n'}
+[2.644987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.651987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:65:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfilter_param_y_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.651987] (path_package) StderrLine: {'line': b'   65 |         \x1b[01;31m\x1b[Kfilter_param_y_\x1b[m\x1b[K = this->get_parameter("Cones_filter_param_y").as_double();\n'}
+[2.651987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.651987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:66:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_spline_degree_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.651987] (path_package) StderrLine: {'line': b'   66 |         \x1b[01;31m\x1b[Kmax_spline_degree_\x1b[m\x1b[K = this->get_parameter("Max_spline_degree").as_int();\n'}
+[2.651987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.651987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:68:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwaypoint_threshold_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.651987] (path_package) StderrLine: {'line': b'   68 |         \x1b[01;31m\x1b[Kwaypoint_threshold_\x1b[m\x1b[K = 6;\n'}
+[2.651987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.651987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:69:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kspecial_case_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.651987] (path_package) StderrLine: {'line': b'   69 |         \x1b[01;31m\x1b[Kspecial_case_\x1b[m\x1b[K = 0;\n'}
+[2.651987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:70:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kspline_degree_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   70 |         \x1b[01;31m\x1b[Kspline_degree_\x1b[m\x1b[K = 1;\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:71:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSpecialActivated_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   71 |         \x1b[01;31m\x1b[KSpecialActivated_\x1b[m\x1b[K = false;\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:72:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kla_dyn_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   72 |         \x1b[01;31m\x1b[Kla_dyn_\x1b[m\x1b[K = (leng_ == 0.0);\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:73:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpred_eval_length_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   73 |         \x1b[01;31m\x1b[Kpred_eval_length_\x1b[m\x1b[K = 20;\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:74:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kavg_curvature_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   74 |         \x1b[01;31m\x1b[Kavg_curvature_\x1b[m\x1b[K = 5.0;\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:75:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Karclen_minore_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   75 |         \x1b[01;31m\x1b[Karclen_minore_\x1b[m\x1b[K = false;\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:94:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_cones_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   94 |         \x1b[01;31m\x1b[Ksubscription_cones_\x1b[m\x1b[K = this->create_subscription<zed_msgs::msg::Cones>(\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:94:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kzed_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   94 |         subscription_cones_ = this->create_subscription<\x1b[01;31m\x1b[Kzed_msgs\x1b[m\x1b[K::msg::Cones>(\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:94:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   94 |         subscription_cones_ = this->\x1b[01;31m\x1b[Kcreate_subscription<zed_msgs::msg::Cones>\x1b[m\x1b[K(\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1\x1b[m\x1b[K:\n'}
+[2.673987] (path_package) StderrLine: {'line': b'/usr/include/c++/11/functional: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_check_arity<void (LoadDataNode::*)(), LoadDataNode*, const std::_Placeholder<1>&>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:768:12:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_helper<false, void (LoadDataNode::*)(), LoadDataNode*, const std::_Placeholder<1>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:789:5:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (LoadDataNode::*)(); _BoundArgs = {LoadDataNode*, const std::_Placeholder<1>&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:95:52:\x1b[m\x1b[K   required from here\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:756:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: Wrong number of arguments for pointer-to-member\n'}
+[2.673987] (path_package) StderrLine: {'line': b'  755 |       static_assert(_Varargs::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'  756 | \x1b[01;31m\x1b[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'  757 | \x1b[01;31m\x1b[K                    : sizeof...(_BoundArgs) == _Arity::value + 1\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:756:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K(false ? (2 >= (((long unsigned int)std::integral_constant<long unsigned int, 0>::value) + 1)) : (2 == (((long unsigned int)std::integral_constant<long unsigned int, 0>::value) + 1)))\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:94:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KLoadDataNode::create_subscription<<expression error> >(const char [24], int, std::_Bind_helper<false, void (LoadDataNode::*)(), LoadDataNode*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   94 |  subscription_cones_ = \x1b[01;31m\x1b[Kthis->create_subscription<zed_msgs::msg::Cones>(\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   95 | \x1b[01;31m\x1b[K     "/zed2i/topic_bbox_zed3d", 1, std::bind(&LoadDataNode::timer_callback, this, _1))\x1b[m\x1b[K;\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\n'}
+[2.673987] (path_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1\x1b[m\x1b[K:\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.673987] (path_package) StderrLine: {'line': b'  219 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:94:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   94 |  subscription_cones_ = \x1b[01;31m\x1b[Kthis->create_subscription<zed_msgs::msg::Cones>(\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   95 | \x1b[01;31m\x1b[K     "/zed2i/topic_bbox_zed3d", 1, std::bind(&LoadDataNode::timer_callback, this, _1))\x1b[m\x1b[K;\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:98:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_waypoints_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   98 |         \x1b[01;31m\x1b[Kpublisher_waypoints_\x1b[m\x1b[K = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoints", 1);\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:98:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   98 |         publisher_waypoints_ = this->create_publisher<\x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::WaypointArrayStamped>("Waypoints", 1);\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:98:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   98 |         publisher_waypoints_ = this->\x1b[01;31m\x1b[Kcreate_publisher<control_msgs::msg::WaypointArrayStamped>\x1b[m\x1b[K("Waypoints", 1);\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:98:95:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KLoadDataNode::create_publisher<<expression error> >(const char [10], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   98 | \x1b[01;31m\x1b[Ks->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoints", 1)\x1b[m\x1b[K;\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\n'}
+[2.673987] (path_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.673987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1\x1b[m\x1b[K:\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.673987] (path_package) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:98:95:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.673987] (path_package) StderrLine: {'line': b'   98 | \x1b[01;31m\x1b[Ks->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoints", 1)\x1b[m\x1b[K;\n'}
+[2.673987] (path_package) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673987] (path_package) StderrLine: {'line': b'\n'}
+[2.729987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:100:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_ref_waypoint_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.729987] (-) TimerEvent: {}
+[2.729987] (path_package) StderrLine: {'line': b'  100 |         \x1b[01;31m\x1b[Kpublisher_ref_waypoint_\x1b[m\x1b[K = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoint_filtered", 1);\n'}
+[2.729987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.729987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:100:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.729987] (path_package) StderrLine: {'line': b'  100 |         publisher_ref_waypoint_ = this->\x1b[01;31m\x1b[Kcreate_publisher<control_msgs::msg::WaypointArrayStamped>\x1b[m\x1b[K("Waypoint_filtered", 1);\n'}
+[2.729987] (path_package) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.729987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:100:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KLoadDataNode::create_publisher<control_msgs>(const char [18], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.729987] (path_package) StderrLine: {'line': b'  100 | \x1b[01;31m\x1b[Ks->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoint_filtered", 1)\x1b[m\x1b[K;\n'}
+[2.729987] (path_package) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.729987] (path_package) StderrLine: {'line': b'\n'}
+[2.729987] (path_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.729987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.729987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.729987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1\x1b[m\x1b[K:\n'}
+[2.729987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.729987] (path_package) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[2.729987] (path_package) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.729987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.735987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:101:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_spline_points_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.735987] (path_package) StderrLine: {'line': b'  101 |         \x1b[01;31m\x1b[Kpublisher_spline_points_\x1b[m\x1b[K = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Spline_Points", 1);\n'}
+[2.735987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.735987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:101:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.735987] (path_package) StderrLine: {'line': b'  101 |         publisher_spline_points_ = this->\x1b[01;31m\x1b[Kcreate_publisher<control_msgs::msg::WaypointArrayStamped>\x1b[m\x1b[K("Spline_Points", 1);\n'}
+[2.735987] (path_package) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.735987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:101:99:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KLoadDataNode::create_publisher<control_msgs>(const char [14], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.735987] (path_package) StderrLine: {'line': b'  101 | \x1b[01;31m\x1b[Ks->create_publisher<control_msgs::msg::WaypointArrayStamped>("Spline_Points", 1)\x1b[m\x1b[K;\n'}
+[2.735987] (path_package) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.735987] (path_package) StderrLine: {'line': b'\n'}
+[2.735987] (path_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.735987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.735987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.735987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1\x1b[m\x1b[K:\n'}
+[2.735987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.735987] (path_package) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[2.735987] (path_package) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.735987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.735987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:102:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_special_case_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.742987] (path_package) StderrLine: {'line': b'  102 |         \x1b[01;31m\x1b[Kpublisher_special_case_\x1b[m\x1b[K = this->create_publisher<path_interfaces::msg::Pubxy>("Special_case", 1);\n'}
+[2.742987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.742987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:102:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpath_interfaces\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.746987] (path_package) StderrLine: {'line': b'  102 |         publisher_special_case_ = this->create_publisher<\x1b[01;31m\x1b[Kpath_interfaces\x1b[m\x1b[K::msg::Pubxy>("Special_case", 1);\n'}
+[2.746987] (path_package) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.746987] (path_package) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[Krcl_interfaces\x1b[m\x1b[K\n'}
+[2.746987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:102:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.746987] (path_package) StderrLine: {'line': b'  102 |         publisher_special_case_ = this->\x1b[01;31m\x1b[Kcreate_publisher<path_interfaces::msg::Pubxy>\x1b[m\x1b[K("Special_case", 1);\n'}
+[2.746987] (path_package) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.746987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:102:86:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KLoadDataNode::create_publisher<<expression error> >(const char [13], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.746987] (path_package) StderrLine: {'line': b'  102 | _case_ = \x1b[01;31m\x1b[Kthis->create_publisher<path_interfaces::msg::Pubxy>("Special_case", 1)\x1b[m\x1b[K;\n'}
+[2.746987] (path_package) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.746987] (path_package) StderrLine: {'line': b'\n'}
+[2.746987] (path_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.746987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.746987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.746987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1\x1b[m\x1b[K:\n'}
+[2.746987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.746987] (path_package) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[2.746987] (path_package) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.746987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.746987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:102:86:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.746987] (path_package) StderrLine: {'line': b'  102 | _case_ = \x1b[01;31m\x1b[Kthis->create_publisher<path_interfaces::msg::Pubxy>("Special_case", 1)\x1b[m\x1b[K;\n'}
+[2.746987] (path_package) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.746987] (path_package) StderrLine: {'line': b'\n'}
+[2.750987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:103:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_velocity_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.751987] (path_package) StderrLine: {'line': b'  103 |         \x1b[01;31m\x1b[Kpublisher_velocity_\x1b[m\x1b[K = this->create_publisher<control_msgs::msg::RefData>("ReferenceData", 1);\n'}
+[2.751987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.751987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:103:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.751987] (path_package) StderrLine: {'line': b'  103 |         publisher_velocity_ = this->\x1b[01;31m\x1b[Kcreate_publisher<control_msgs::msg::RefData>\x1b[m\x1b[K("ReferenceData", 1);\n'}
+[2.751987] (path_package) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.751987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:103:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KLoadDataNode::create_publisher<control_msgs>(const char [14], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.751987] (path_package) StderrLine: {'line': b'  103 | locity_ = \x1b[01;31m\x1b[Kthis->create_publisher<control_msgs::msg::RefData>("ReferenceData", 1)\x1b[m\x1b[K;\n'}
+[2.751987] (path_package) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.751987] (path_package) StderrLine: {'line': b'\n'}
+[2.751987] (path_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.751987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.751987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.751987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1\x1b[m\x1b[K:\n'}
+[2.751987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.751987] (path_package) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[2.751987] (path_package) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.751987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.751987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:104:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_filtered_cones_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.757987] (path_package) StderrLine: {'line': b'  104 |         \x1b[01;31m\x1b[Kpublisher_filtered_cones_\x1b[m\x1b[K = this->create_publisher<zed_msgs::msg::Cones>("Filtered_Cones", 1);\n'}
+[2.757987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.757987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:104:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.757987] (path_package) StderrLine: {'line': b'  104 |         publisher_filtered_cones_ = this->\x1b[01;31m\x1b[Kcreate_publisher<zed_msgs::msg::Cones>\x1b[m\x1b[K("Filtered_Cones", 1);\n'}
+[2.757987] (path_package) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.757987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:104:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KLoadDataNode::create_publisher<zed_msgs>(const char [15], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.757987] (path_package) StderrLine: {'line': b'  104 | ltered_cones_ = \x1b[01;31m\x1b[Kthis->create_publisher<zed_msgs::msg::Cones>("Filtered_Cones", 1)\x1b[m\x1b[K;\n'}
+[2.757987] (path_package) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.757987] (path_package) StderrLine: {'line': b'\n'}
+[2.757987] (path_package) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.757987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.757987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.757987] (path_package) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:1\x1b[m\x1b[K:\n'}
+[2.757987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.757987] (path_package) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[2.757987] (path_package) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.757987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.757987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LoadDataNode::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.757987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:111:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmy_package\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.757987] (path_package) StderrLine: {'line': b'  111 |         \x1b[01;31m\x1b[Kmy_package\x1b[m\x1b[K::msg::Cones filtered_cones;\n'}
+[2.757987] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.757987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:114:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg_cones\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.762987] (path_package) StderrLine: {'line': b'  114 |         for (const auto &cone : \x1b[01;31m\x1b[Kmsg_cones\x1b[m\x1b[K.big_orange_cones)\n'}
+[2.762987] (path_package) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.762987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:120:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg_cones\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.766987] (path_package) StderrLine: {'line': b'  120 |         for (const auto &cone : \x1b[01;31m\x1b[Kmsg_cones\x1b[m\x1b[K.little_orange_cones)\n'}
+[2.766987] (path_package) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.766987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:136:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg_cones\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.770987] (path_package) StderrLine: {'line': b'  136 |         for (const auto &cone : \x1b[01;31m\x1b[Kmsg_cones\x1b[m\x1b[K.blue_cones)\n'}
+[2.770987] (path_package) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.770987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:138:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfilter_param_y_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.773987] (path_package) StderrLine: {'line': b'  138 |             if (std::abs(cone.y) < \x1b[01;31m\x1b[Kfilter_param_y_\x1b[m\x1b[K && std::sqrt(cone.x * cone.x + cone.y * cone.y) < filter_param_distance_)\n'}
+[2.773987] (path_package) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.779987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:138:102:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfilter_param_distance_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.779987] (path_package) StderrLine: {'line': b'  138 | _param_y_ && std::sqrt(cone.x * cone.x + cone.y * cone.y) < \x1b[01;31m\x1b[Kfilter_param_distance_\x1b[m\x1b[K)\n'}
+[2.779987] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.779987] (path_package) StderrLine: {'line': b'\n'}
+[2.783987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:145:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg_cones\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.783987] (path_package) StderrLine: {'line': b'  145 |         for (const auto &cone : \x1b[01;31m\x1b[Kmsg_cones\x1b[m\x1b[K.yellow_cones)\n'}
+[2.783987] (path_package) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.787987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:147:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfilter_param_y_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.787987] (path_package) StderrLine: {'line': b'  147 |             if (std::abs(cone.y) < \x1b[01;31m\x1b[Kfilter_param_y_\x1b[m\x1b[K && std::sqrt(cone.x * cone.x + cone.y * cone.y) < filter_param_distance_)\n'}
+[2.787987] (path_package) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.794987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:147:102:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfilter_param_distance_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.794987] (path_package) StderrLine: {'line': b'  147 | _param_y_ && std::sqrt(cone.x * cone.x + cone.y * cone.y) < \x1b[01;31m\x1b[Kfilter_param_distance_\x1b[m\x1b[K)\n'}
+[2.794987] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.794987] (path_package) StderrLine: {'line': b'\n'}
+[2.794987] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:157:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmy_package\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.794987] (path_package) StderrLine: {'line': b'  157 |             \x1b[01;31m\x1b[Kmy_package\x1b[m\x1b[K::msg::Cone little_orange_cone;\n'}
+[2.794987] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.799986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:158:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klittle_orange_cone\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.799986] (path_package) StderrLine: {'line': b'  158 |             \x1b[01;31m\x1b[Klittle_orange_cone\x1b[m\x1b[K.cone_type = 3;\n'}
+[2.799986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.804986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:162:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfiltered_cones\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.804986] (path_package) StderrLine: {'line': b'  162 |             \x1b[01;31m\x1b[Kfiltered_cones\x1b[m\x1b[K.little_orange_cones.push_back(little_orange_cone);\n'}
+[2.804986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.804986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:167:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmy_package\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.804986] (path_package) StderrLine: {'line': b'  167 |             \x1b[01;31m\x1b[Kmy_package\x1b[m\x1b[K::msg::Cone big_orange_cone;\n'}
+[2.804986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.808986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:168:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbig_orange_cone\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.808986] (path_package) StderrLine: {'line': b'  168 |             \x1b[01;31m\x1b[Kbig_orange_cone\x1b[m\x1b[K.cone_type = 1;\n'}
+[2.808986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.813986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:172:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfiltered_cones\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.814986] (path_package) StderrLine: {'line': b'  172 |             \x1b[01;31m\x1b[Kfiltered_cones\x1b[m\x1b[K.big_orange_cones.push_back(big_orange_cone);\n'}
+[2.814986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.814986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:177:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmy_package\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.814986] (path_package) StderrLine: {'line': b'  177 |             \x1b[01;31m\x1b[Kmy_package\x1b[m\x1b[K::msg::Cone blue_cone;\n'}
+[2.814986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.817986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:178:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kblue_cone\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.817986] (path_package) StderrLine: {'line': b'  178 |             \x1b[01;31m\x1b[Kblue_cone\x1b[m\x1b[K.cone_type = 2;\n'}
+[2.817986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.821986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:182:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfiltered_cones\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.821986] (path_package) StderrLine: {'line': b'  182 |             \x1b[01;31m\x1b[Kfiltered_cones\x1b[m\x1b[K.blue_cones.push_back(blue_cone);\n'}
+[2.821986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.821986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:187:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmy_package\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.821986] (path_package) StderrLine: {'line': b'  187 |             \x1b[01;31m\x1b[Kmy_package\x1b[m\x1b[K::msg::Cone yellow_cone;\n'}
+[2.821986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.825986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:188:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyellow_cone\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.825986] (path_package) StderrLine: {'line': b'  188 |             \x1b[01;31m\x1b[Kyellow_cone\x1b[m\x1b[K.cone_type = 4;\n'}
+[2.825986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.830986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:192:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfiltered_cones\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.831986] (-) TimerEvent: {}
+[2.831986] (path_package) StderrLine: {'line': b'  192 |             \x1b[01;31m\x1b[Kfiltered_cones\x1b[m\x1b[K.yellow_cones.push_back(yellow_cone);\n'}
+[2.831986] (path_package) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.833986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:200:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWaypoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.833986] (path_package) StderrLine: {'line': b'  200 |                 \x1b[01;31m\x1b[KWaypoints\x1b[m\x1b[K = delaunayCalculation();\n'}
+[2.833986] (path_package) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.838986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:200:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KdelaunayCalculation\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.838986] (path_package) StderrLine: {'line': b'  200 |                 Waypoints = \x1b[01;31m\x1b[KdelaunayCalculation\x1b[m\x1b[K();\n'}
+[2.838986] (path_package) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.844986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:205:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_spline_degree_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.844986] (path_package) StderrLine: {'line': b'  205 |         spline(\x1b[01;31m\x1b[Kmax_spline_degree_\x1b[m\x1b[K, Waypoints);\n'}
+[2.844986] (path_package) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.847986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:205:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWaypoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.847986] (path_package) StderrLine: {'line': b'  205 |         spline(max_spline_degree_, \x1b[01;31m\x1b[KWaypoints\x1b[m\x1b[K);\n'}
+[2.847986] (path_package) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.849986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:205:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kspline\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.849986] (path_package) StderrLine: {'line': b'  205 |         \x1b[01;31m\x1b[Kspline\x1b[m\x1b[K(max_spline_degree_, Waypoints);\n'}
+[2.849986] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.853986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:209:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.853986] (path_package) StderrLine: {'line': b'  209 |         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(filtered_cones);\n'}
+[2.853986] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.853986] (path_package) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[2.857986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:209:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfiltered_cones\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.857986] (path_package) StderrLine: {'line': b'  209 |         publisher_->publish(\x1b[01;31m\x1b[Kfiltered_cones\x1b[m\x1b[K);\n'}
+[2.857986] (path_package) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.857986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.857986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:214:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid declarator before \xe2\x80\x98\x1b[01m\x1b[KdelaunayCalculation\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.857986] (path_package) StderrLine: {'line': b'  214 |     std::vector<CustomPoint2D> \x1b[01;31m\x1b[KdelaunayCalculation\x1b[m\x1b[K() {\n'}
+[2.857986] (path_package) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.858986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kglm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.858986] (path_package) StderrLine: {'line': b'  280 |     std::vector<\x1b[01;31m\x1b[Kglm\x1b[m\x1b[K::vec2> spline(const max_spline_degree_, const <std::pair<double, double>>Waypoints) {\n'}
+[2.858986] (path_package) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.858986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.858986] (path_package) StderrLine: {'line': b'  280 |     std::vector<glm::vec2\x1b[01;31m\x1b[K>\x1b[m\x1b[K spline(const max_spline_degree_, const <std::pair<double, double>>Waypoints) {\n'}
+[2.858986] (path_package) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.858986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.860986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_spline_degree_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.860986] (path_package) StderrLine: {'line': b'  280 |     std::vector<glm::vec2> spline(const \x1b[01;31m\x1b[Kmax_spline_degree_\x1b[m\x1b[K, const <std::pair<double, double>>Waypoints) {\n'}
+[2.860986] (path_package) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.860986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Kparameter\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.860986] (path_package) StderrLine: {'line': b'  280 |     std::vector<glm::vec2> spline(const max_spline_degree_, \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K <std::pair<double, double>>Waypoints) {\n'}
+[2.860986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.860986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:280:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K<\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.860986] (path_package) StderrLine: {'line': b'  280 | d::vector<glm::vec2> spline(const max_spline_degree_, const \x1b[01;31m\x1b[K<\x1b[m\x1b[Kstd::pair<double, double>>Waypoints) {\n'}
+[2.860986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.860986] (path_package) StderrLine: {'line': b'\n'}
+[2.863986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint spline(int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.863986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:282:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_spline_degree_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.863986] (path_package) StderrLine: {'line': b'  282 |     if (\x1b[01;31m\x1b[Kmax_spline_degree_\x1b[m\x1b[K != 2)\n'}
+[2.863986] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.865986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:287:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWaypoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.865986] (path_package) StderrLine: {'line': b'  287 |     for (const auto& p : \x1b[01;31m\x1b[KWaypoints\x1b[m\x1b[K) {\n'}
+[2.865986] (path_package) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.867986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:293:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWaypoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.867986] (path_package) StderrLine: {'line': b'  293 |     std::vector<double> t(\x1b[01;31m\x1b[KWaypoints\x1b[m\x1b[K.size());\n'}
+[2.867986] (path_package) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.870986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:300:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_spline_degree_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.870986] (path_package) StderrLine: {'line': b'  300 |     spapi(\x1b[01;31m\x1b[Kmax_spline_degree_\x1b[m\x1b[K, x, spline_x);\n'}
+[2.870986] (path_package) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.873986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:300:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kspapi\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.873986] (path_package) StderrLine: {'line': b'  300 |     \x1b[01;31m\x1b[Kspapi\x1b[m\x1b[K(max_spline_degree_, x, spline_x);\n'}
+[2.873986] (path_package) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.875986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:304:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfnval\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.875986] (path_package) StderrLine: {'line': b'  304 |     double x_end = \x1b[01;31m\x1b[Kfnval\x1b[m\x1b[K(spline_x, 1.0);\n'}
+[2.875986] (path_package) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.875986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:306:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kglm\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.875986] (path_package) StderrLine: {'line': b'  306 |     \x1b[01;31m\x1b[Kglm\x1b[m\x1b[K::vec2 punto_fine(x_end, y_end);\n'}
+[2.875986] (path_package) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.876986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:329:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kglm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.876986] (path_package) StderrLine: {'line': b'  329 |     std::vector<\x1b[01;31m\x1b[Kglm\x1b[m\x1b[K::vec2> punti_aggiornati = Waypoints;\n'}
+[2.876986] (path_package) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.876986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:329:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.876986] (path_package) StderrLine: {'line': b'  329 |     std::vector<glm::vec2\x1b[01;31m\x1b[K>\x1b[m\x1b[K punti_aggiornati = Waypoints;\n'}
+[2.876986] (path_package) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.876986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:329:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.876986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:330:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kpush_back\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kpunti_aggiornati\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.876986] (path_package) StderrLine: {'line': b'  330 |     punti_aggiornati.\x1b[01;31m\x1b[Kpush_back\x1b[m\x1b[K(cono_scelto);\n'}
+[2.876986] (path_package) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.878986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:330:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcono_scelto\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.878986] (path_package) StderrLine: {'line': b'  330 |     punti_aggiornati.push_back(\x1b[01;31m\x1b[Kcono_scelto\x1b[m\x1b[K);\n'}
+[2.878986] (path_package) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.878986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:304:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kx_end\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.878986] (path_package) StderrLine: {'line': b'  304 |     double \x1b[01;35m\x1b[Kx_end\x1b[m\x1b[K = fnval(spline_x, 1.0);\n'}
+[2.878986] (path_package) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.878986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:305:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ky_end\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.878986] (path_package) StderrLine: {'line': b'  305 |     double \x1b[01;35m\x1b[Ky_end\x1b[m\x1b[K = fnval(spline_y, 1.0);\n'}
+[2.878986] (path_package) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.878986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid publish_spline_points(const std::vector<std::vector<float> >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.878986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:342:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.878986] (path_package) StderrLine: {'line': b'  342 |         auto msg = \x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::WaypointArrayStamped();\n'}
+[2.878986] (path_package) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.880986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:347:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.880986] (path_package) StderrLine: {'line': b'  347 |             auto spline_point = \x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::Waypoint();\n'}
+[2.880986] (path_package) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.883986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:354:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_spline_points_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpublish_spline_points\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.883986] (path_package) StderrLine: {'line': b'  354 |         \x1b[01;31m\x1b[Kpublisher_spline_points_\x1b[m\x1b[K->publish(msg);\n'}
+[2.883986] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.883986] (path_package) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kpublish_spline_points\x1b[m\x1b[K\n'}
+[2.884986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid publish_waypoints(std::vector<std::pair<double, double> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.886986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:359:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.886986] (path_package) StderrLine: {'line': b'  359 |         auto msg = \x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::WaypointArrayStamped();\n'}
+[2.886986] (path_package) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.886986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:363:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.886986] (path_package) StderrLine: {'line': b'  363 |             auto waypoint = \x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::Waypoint();\n'}
+[2.886986] (path_package) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.886986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:364:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator[]\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kconst value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.887986] (path_package) StderrLine: {'line': b'  364 |             waypoint.position.x = Waypoints[i]\x1b[01;31m\x1b[K[\x1b[m\x1b[K0];\n'}
+[2.887986] (path_package) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.887986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:365:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator[]\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kconst value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.887986] (path_package) StderrLine: {'line': b'  365 |             waypoint.position.y = Waypoints[i]\x1b[01;31m\x1b[K[\x1b[m\x1b[K1];\n'}
+[2.887986] (path_package) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.888986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:369:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_waypoints_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpublish_waypoints\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.888986] (path_package) StderrLine: {'line': b'  369 |         \x1b[01;31m\x1b[Kpublisher_waypoints_\x1b[m\x1b[K->publish(msg);\n'}
+[2.888986] (path_package) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.888986] (path_package) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kpublish_waypoints\x1b[m\x1b[K\n'}
+[2.891986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.891986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:394:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmy_package\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.891986] (path_package) StderrLine: {'line': b'  394 |     \x1b[01;31m\x1b[Kmy_package\x1b[m\x1b[K::msg::Cones filtered_cones;\n'}
+[2.891986] (path_package) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.892986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:395:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kglm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.892986] (path_package) StderrLine: {'line': b'  395 |     std::vector<\x1b[01;31m\x1b[Kglm\x1b[m\x1b[K::vec2> punti_aggiornati;\n'}
+[2.892986] (path_package) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.892986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:395:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.892986] (path_package) StderrLine: {'line': b'  395 |     std::vector<glm::vec2\x1b[01;31m\x1b[K>\x1b[m\x1b[K punti_aggiornati;\n'}
+[2.892986] (path_package) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.892986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:395:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kzed_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  398 |     rclcpp::Subscription<\x1b[01;31m\x1b[Kzed_msgs\x1b[m\x1b[K::msg::Cones>::SharedPtr subscription_cones_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  398 |     rclcpp::Subscription<zed_msgs::msg::Cones\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr subscription_cones_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:398:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Ksubscription_cones_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  398 |     rclcpp::Subscription<zed_msgs::msg::Cones>::SharedPtr \x1b[01;31m\x1b[Ksubscription_cones_\x1b[m\x1b[K;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:399:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  399 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::WaypointArrayStamped>::SharedPtr publisher_waypoints_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:399:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  399 |    rclcpp::Publisher<control_msgs::msg::WaypointArrayStamped\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr publisher_waypoints_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:399:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kpublisher_waypoints_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  399 | blisher<control_msgs::msg::WaypointArrayStamped>::SharedPtr \x1b[01;31m\x1b[Kpublisher_waypoints_\x1b[m\x1b[K;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:400:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpath_interfaces\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  400 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kpath_interfaces\x1b[m\x1b[K::msg::WaypointsPlusCones>::SharedPtr publisher_wayspluscones_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                       \x1b[32m\x1b[Krcl_interfaces\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:400:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  400 |   rclcpp::Publisher<path_interfaces::msg::WaypointsPlusCones\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr publisher_wayspluscones_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:400:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kpublisher_wayspluscones_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  400 | lisher<path_interfaces::msg::WaypointsPlusCones>::SharedPtr \x1b[01;31m\x1b[Kpublisher_wayspluscones_\x1b[m\x1b[K;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:401:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  401 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::WaypointArrayStamped>::SharedPtr publisher_ref_waypoint_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:401:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  401 |    rclcpp::Publisher<control_msgs::msg::WaypointArrayStamped\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr publisher_ref_waypoint_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:401:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kpublisher_ref_waypoint_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  401 | blisher<control_msgs::msg::WaypointArrayStamped>::SharedPtr \x1b[01;31m\x1b[Kpublisher_ref_waypoint_\x1b[m\x1b[K;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:402:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  402 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::WaypointArrayStamped>::SharedPtr publisher_spline_points_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:402:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  402 |    rclcpp::Publisher<control_msgs::msg::WaypointArrayStamped\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr publisher_spline_points_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:402:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kpublisher_spline_points_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  402 | blisher<control_msgs::msg::WaypointArrayStamped>::SharedPtr \x1b[01;31m\x1b[Kpublisher_spline_points_\x1b[m\x1b[K;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:403:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpath_interfaces\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  403 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kpath_interfaces\x1b[m\x1b[K::msg::Pubxy>::SharedPtr publisher_special_case_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                       \x1b[32m\x1b[Krcl_interfaces\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:403:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  403 |     rclcpp::Publisher<path_interfaces::msg::Pubxy\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr publisher_special_case_;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:403:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kpublisher_special_case_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.894986] (path_package) StderrLine: {'line': b'  403 |   rclcpp::Publisher<path_interfaces::msg::Pubxy>::SharedPtr \x1b[01;31m\x1b[Kpublisher_special_case_\x1b[m\x1b[K;\n'}
+[2.894986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.894986] (path_package) StderrLine: {'line': b'\n'}
+[2.908986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:404:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.908986] (path_package) StderrLine: {'line': b'  404 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::RefData>::SharedPtr publisher_velocity_;\n'}
+[2.908986] (path_package) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.908986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:404:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.908986] (path_package) StderrLine: {'line': b'  404 |     rclcpp::Publisher<control_msgs::msg::RefData\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr publisher_velocity_;\n'}
+[2.908986] (path_package) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.908986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:404:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kpublisher_velocity_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.908986] (path_package) StderrLine: {'line': b'  404 |    rclcpp::Publisher<control_msgs::msg::RefData>::SharedPtr \x1b[01;31m\x1b[Kpublisher_velocity_\x1b[m\x1b[K;\n'}
+[2.908986] (path_package) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.908986] (path_package) StderrLine: {'line': b'\n'}
+[2.908986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:405:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kzed_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.908986] (path_package) StderrLine: {'line': b'  405 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kzed_msgs\x1b[m\x1b[K::msg::Cones>::SharedPtr publisher_filtered_cones_;\n'}
+[2.908986] (path_package) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.908986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:405:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.908986] (path_package) StderrLine: {'line': b'  405 |     rclcpp::Publisher<zed_msgs::msg::Cones\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr publisher_filtered_cones_;\n'}
+[2.908986] (path_package) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.908986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:405:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kpublisher_filtered_cones_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.908986] (path_package) StderrLine: {'line': b'  405 |     rclcpp::Publisher<zed_msgs::msg::Cones>::SharedPtr \x1b[01;31m\x1b[Kpublisher_filtered_cones_\x1b[m\x1b[K;\n'}
+[2.908986] (path_package) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.908986] (path_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/gim/ros2_humble/src/path_package/src/path.cpp:406:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.908986] (path_package) StderrLine: {'line': b'  406 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[2.908986] (path_package) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.035985] (-) TimerEvent: {}
+[3.159985] (-) TimerEvent: {}
+[3.222984] (path_package) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/path_pkg.dir/build.make:76: CMakeFiles/path_pkg.dir/src/path.cpp.o] Error 1\n'}
+[3.224984] (path_package) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/path_pkg.dir/all] Error 2\n'}
+[3.225984] (path_package) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.231984] (path_package) CommandEnded: {'returncode': 2}
+[3.261984] (-) TimerEvent: {}
+[3.261984] (path_package) JobEnded: {'identifier': 'path_package', 'rc': 2}
+[3.274984] (-) EventReactorShutdown: {}

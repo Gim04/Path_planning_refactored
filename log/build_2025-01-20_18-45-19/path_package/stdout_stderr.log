@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target talker[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/path.cpp.o[0m
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:249:21:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+  249 | cdt.insertVertices([[01;31m[K1[m[K,1],[2,2],[3,2]);
+      |                     [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:249:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+  249 | cdt.insertVertices([1[01;31m[K,[m[K1],[2,2],[3,2]);
+      |                      [01;31m[K^[m[K
+      |                      [32m[K][m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In lambda function:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:249:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:249:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K][m[K’ token
+  249 | cdt.insertVertices[34m[K([m[K[1,1[01;31m[K][m[K,[2,2],[3,2]);
+      |                   [34m[K~[m[K    [01;31m[K^[m[K
+      |                        [32m[K)[m[K
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/path.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

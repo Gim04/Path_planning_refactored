@@ -1,0 +1,51 @@
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:277:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+  277 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In constructor ‘[01m[KLoadDataNode::LoadDataNode()[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:254:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCustomEdge[m[K’ was not declared in this scope
+  254 |         std::vector<[01;31m[KCustomEdge[m[K> edges;
+      |                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:254:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  254 |         std::vector<CustomEdge[01;31m[K>[m[K edges;
+      |                               [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:254:31:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:255:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCustomPoint2D[m[K’ was not declared in this scope
+  255 |         std::vector<[01;31m[KCustomPoint2D[m[K> points = {{1, 11}, {5, 5}, {5, 8}, {4, 10}, {-2, 11}, {-3, 10}, {-4, 8},
+      |                     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:255:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  255 |         std::vector<CustomPoint2D[01;31m[K>[m[K points = {{1, 11}, {5, 5}, {5, 8}, {4, 10}, {-2, 11}, {-3, 10}, {-4, 8},
+      |                                  [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:255:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:255:36:[m[K [01;31m[Kerror: [m[Kscalar object ‘[01m[Kpoints[m[K’ requires one element in initializer
+  255 |         std::vector<CustomPoint2D> [01;31m[Kpoints[m[K = {{1, 11}, {5, 5}, {5, 8}, {4, 10}, {-2, 11}, {-3, 10}, {-4, 8},
+      |                                    [01;31m[K^~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:262:58:[m[K [01;31m[Kerror: [m[K‘[01m[KCustomPoint2D[m[K’ does not name a type
+  262 |             points.begin(),    points.end(),    [](const [01;31m[KCustomPoint2D[m[K& p){ return p.data[0]; },
+      |                                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:264:13:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K[[m[K’ token
+  264 |             [01;31m[K[[m[K](const CustomPoint2D& p){ return p.data[1]; }
+      |             [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:264:22:[m[K [01;31m[Kerror: [m[K‘[01m[KCustomPoint2D[m[K’ does not name a type
+  264 |             [](const [01;31m[KCustomPoint2D[m[K& p){ return p.data[1]; }
+      |                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:264:38:[m[K [01;31m[Kerror: [m[Kcreating array of functions
+  264 |             [](const CustomPoint2D& p[01;31m[K)[m[K{ return p.data[1]; }
+      |                                      [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:264:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+  264 |             [](const CustomPoint2D& p)[01;31m[K{[m[K return p.data[1]; }
+      |                                       [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:262:51:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  262 |             points.begin(),    points.end(),    [][01;36m[K([m[Kconst CustomPoint2D& p){ return p.data[0]; },
+      |                                                   [01;36m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In lambda function:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:264:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kp[m[K’ was not declared in this scope
+  264 |             [](const CustomPoint2D& p){ return [01;31m[Kp[m[K.data[1]; }
+      |                                                [01;31m[K^[m[K
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In constructor ‘[01m[KLoadDataNode::LoadDataNode()[m[K’:
+[01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:254:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kedges[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  254 |         std::vector<CustomEdge> [01;35m[Kedges[m[K;
+      |                                 [01;35m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/path.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,39 @@
+[35m[1mConsolidate compiler generated dependencies of target talker[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/path.cpp.o[0m
+[100%] [32m[1mLinking CXX executable talker[0m
+[100%] Built target talker
+-- Install configuration: ""
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/lib/path_package/talker
+-- Set runtime path of "/home/gim/ros2_humble/src/path_package/install/path_package/lib/path_package/talker" to ""
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/ament_index/resource_index/package_run_dependencies/path_package
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/ament_index/resource_index/parent_prefix_path/path_package
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/environment/ament_prefix_path.sh
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/environment/ament_prefix_path.dsv
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/environment/path.sh
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/environment/path.dsv
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/local_setup.bash
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/local_setup.sh
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/local_setup.zsh
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/local_setup.dsv
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/package.dsv
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/ament_index/resource_index/packages/path_package
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/cmake/path_packageConfig.cmake
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/cmake/path_packageConfig-version.cmake
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/share/path_package/package.xml
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/Triangulation.h
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/LocatorKDTree.h
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/CDT.h
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/CDTUtils.h
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/predicates.h
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/portable_nth_element.hpp
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/Triangulation.hpp
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/CDT.h.gch
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/KDTree.h
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/remove_at.hpp
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/CDT.hpp
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/CDTUtils.hpp
+-- Up-to-date: /home/gim/ros2_humble/src/path_package/install/path_package/include
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/VerifyTopology.h
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/include/InitializeWithGrid.h
+-- Installing: /home/gim/ros2_humble/src/path_package/install/path_package/cmake/CDTConfig.cmake

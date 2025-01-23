@@ -1,0 +1,51 @@
+[0.014s] Invoking command in '/home/gim/ros2_humble/src/path_package/build/path_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gim/ros2_humble/src/path_package/build/path_package -- -j6 -l6
+[0.064s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.082s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/path.cpp.o[0m
+[0.571s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:260:40:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+[0.571s]   260 | std::vector<CustomEdge> edges = /*...*/[01;31m[K;[m[K
+[0.571s]       |                                        [01;31m[K^[m[K
+[0.580s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:264:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kcdt[m[K’ does not name a type
+[0.580s]   264 | [01;31m[Kcdt[m[K.insertVertices(
+[0.580s]       | [01;31m[K^~~[m[K
+[0.580s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:266:88:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K,[m[K’ token
+[0.580s]   266 | ),    points.end(),    [](const CustomPoint2D& p){ return p.data[0]; }[01;31m[K,[m[K
+[0.580s]       |                                                                       [01;31m[K^[m[K
+[0.580s] 
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:268:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K[[m[K’ token
+[0.582s]   268 |     [01;31m[K[[m[K](const CustomPoint2D& p){ return p.data[1]; }
+[0.582s]       |     [01;31m[K^[m[K
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:270:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+[0.582s]   270 | [01;31m[K)[m[K;
+[0.582s]       | [01;31m[K^[m[K
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:272:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kcdt[m[K’ does not name a type
+[0.582s]   272 | [01;31m[Kcdt[m[K.insertEdges(
+[0.582s]       | [01;31m[K^~~[m[K
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:274:90:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K,[m[K’ token
+[0.582s]   274 |    edges.end(),    [](const CustomEdge& e){ return e.vertices.first; }[01;31m[K,[m[K
+[0.582s]       |                                                                       [01;31m[K^[m[K
+[0.582s] 
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:276:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K[[m[K’ token
+[0.582s]   276 |     [01;31m[K[[m[K](const CustomEdge& e){ return e.vertices.second; }
+[0.582s]       |     [01;31m[K^[m[K
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:278:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+[0.582s]   278 | [01;31m[K)[m[K;
+[0.582s]       | [01;31m[K^[m[K
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:283:25:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[0.582s]   283 |     cdt.insertVertices([[01;31m[K1[m[K,1],[2,2],[3,2]);
+[0.582s]       |                         [01;31m[K^[m[K
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:283:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K,[m[K’ token
+[0.582s]   283 |     cdt.insertVertices([1[01;31m[K,[m[K1],[2,2],[3,2]);
+[0.582s]       |                          [01;31m[K^[m[K
+[0.582s]       |                          [32m[K][m[K
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In lambda function:
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:283:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[0.582s] [01m[K/home/gim/ros2_humble/src/path_package/src/path.cpp:283:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K][m[K’ token
+[0.582s]   283 |     cdt.insertVertices[34m[K([m[K[1,1[01;31m[K][m[K,[2,2],[3,2]);
+[0.582s]       |                       [34m[K~[m[K    [01;31m[K^[m[K
+[0.582s]       |                            [32m[K)[m[K
+[0.793s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/path.cpp.o] Error 1
+[0.793s] gmake[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/talker.dir/all] Error 2
+[0.793s] gmake: *** [Makefile:146: all] Error 2
+[0.799s] Invoked command in '/home/gim/ros2_humble/src/path_package/build/path_package' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gim/ros2_humble/src/path_package/build/path_package -- -j6 -l6
