@@ -27,6 +27,7 @@
 
 //#include <Eigen/Dense>
 #include <algorithm>
+#include <glm/glm.hpp>
 
 #include "CDT.h" //delaunay triangulation library
 #include "path.h"
@@ -206,7 +207,7 @@ private:
 
         // Pubblica i coni filtrati
         RCLCPP_INFO(this->get_logger(), "--- Pubblico i coni filtrati ---");
-        publisher_->publish(filtered_cones);
+        publisher_filtered_cones_->publish(filtered_cones);
     }
 
     
@@ -237,7 +238,7 @@ private:
                     {
                         if(cdt.vertices[lato.v1()].x == xBlue[i])
                         {
-                            for(size_t i = 0; i < yBlue.size(); ++j)
+                            for(size_t j = 0; j < yBlue.size(); ++j)
                             {
                                 if(cdt.vertices[lato.v1()].y == yBlue[j])
                                 {
@@ -277,7 +278,7 @@ private:
         return Waypoints;
         
     }
-    std::vector<glm::vec2> spline(const int max_spline_degree_, const std::pair<double, double>Waypoints) {
+    std::vector<glm::vec2> spline(const int max_spline_degree_, const  std::vector<CustomPoint2D>Waypoints) {
     // DEBUG ONLY grado
     if (max_spline_degree_ != 2)
         throw std::invalid_argument("Grado non valido");
@@ -390,7 +391,7 @@ private:
     double avg_curvature_;
     bool arclen_minore_;
     std::vector<double> xBlue, yBlue, xYellow, yYellow, xBigO, yBigO, xLittleO, yLittleO;
-    std::vector<std::pair<double, double>> Waypoints;
+    std::vector<CustomPoint2D> Waypoints;
     zed_msgs::msg::Cones filtered_cones;
     std::vector<glm::vec2> punti_aggiornati;
 

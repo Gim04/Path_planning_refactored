@@ -8,6 +8,7 @@ endif()
 # add CDT as subdirectory to CMake project
 add_subdirectory(./src/CDT/CDT)
 include_directories(./src/CDT/CDT/include)
+include_directories(./glm)
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
