@@ -214,8 +214,39 @@ private:
 
     std::vector<CustomPoint2D> delaunayCalculation() {
 
+        std::vector<CustomPoint2D> points;
+        // Itera su ogni "cone" in filtered_cones (di tipo zed_msgs::msg::Cones) per convertire filtered_cones in custompoint2D
+        for (const auto& cone : filtered_cones.blue_cones) {  
+            CustomPoint2D point;
+            point.data[0] = cone.x;  
+            point.data[1] = cone.y;  
+
+            points.push_back(point);
+        }
+        for (const auto& cone : filtered_cones.yellow_cones) {  
+            CustomPoint2D point;
+            point.data[0] = cone.x;  
+            point.data[1] = cone.y;  
+
+            points.push_back(point);
+        }
+        for (const auto& cone : filtered_cones.little_orange_cones) {  
+            CustomPoint2D point;
+            point.data[0] = cone.x;  
+            point.data[1] = cone.y;  
+
+            points.push_back(point);
+        }
+        for (const auto& cone : filtered_cones.big_orange_cones) {  
+            CustomPoint2D point;
+            point.data[0] = cone.x;  
+            point.data[1] = cone.y;  
+
+            points.push_back(point);
+        }
+
+
         std::vector<CustomEdge> edges;
-        std::vector<CustomPoint2D> points = filtered_cones;
         CDT::Triangulation<double> cdt; 
         cdt.eraseSuperTriangle();
 
@@ -286,8 +317,8 @@ private:
     // Estrai coordinate x e y
     std::vector<double> x, y;
     for (const auto& p : Waypoints) {
-        x.push_back(p.x);
-        y.push_back(p.y);
+        x.push_back(p.data[0]);
+        y.push_back(p.data[1]);
     }
 
     // Crea vettore t (intervallo normalizzato)
@@ -327,10 +358,42 @@ private:
     glm::vec2 cono_scelto = adiacenti_correnti[indice_minimo];
 */
     // Aggiorna punti
-    std::vector<glm::vec2> punti_aggiornati = Waypoints;
-    punti_aggiornati.push_back(cono_scelto);
+    std::vector<glm::vec2> punti_aggiornati ;
+    for (const auto& p : Waypoints) {  
+    glm::vec2 vec(p.data[0], p.data[1]);  // Converte CustomPoint2D in glm::vec2
+    punti_aggiornati.push_back(vec);  
+    }
 
     return punti_aggiornati;
+}
+
+void spapi(int grado, const std::vector<double>& valori, std::vector<double>& spline)
+{
+    // DEBUG ONLY grado
+    if (grado != 2)
+        throw std::invalid_argument("Grado non valido");
+
+    // Interpolazione per spline quadratica (grado = 2)
+    int n = valori.size();
+    spline.resize(n);
+
+    for (int i = 1; i < n - 1; ++i) {
+        spline[i] = (valori[i - 1] + valori[i] + valori[i + 1]) / 3.0;
+    }
+
+    // Estremi non hanno punti sufficienti per media, li manteniamo uguali
+    spline[0] = valori[0];
+    spline[n - 1] = valori[n - 1];
+}
+double fnval(const std::vector<double>& spline, double t)
+{
+    // Valutazione spline con interpolazione lineare
+    int n = spline.size();
+    if (t <= 0) return spline[0];
+    if (t >= 1) return spline[n - 1];
+    int idx = static_cast<int>(t * (n - 1));
+    double alpha = t * (n - 1) - idx;
+    return (1 - alpha) * spline[idx] + alpha * spline[idx + 1];
 }
 
 
@@ -355,15 +418,15 @@ private:
         publisher_spline_points_->publish(msg);
     }
 
-    void publish_waypoints(const std::vector<std::pair<double, double>> Waypoints)
+    void publish_waypoints(const std::vector<CustomPoint2D> Waypoints)
     {
         auto msg = control_msgs::msg::WaypointArrayStamped();
 
         for(size_t i = 0; i < Waypoints.size(); ++i)
         {
             auto waypoint = control_msgs::msg::Waypoint();
-            waypoint.position.x = Waypoints[i][0];
-            waypoint.position.y = Waypoints[i][1];
+            waypoint.position.x = Waypoints[i].data[0];
+            waypoint.position.y = Waypoints[i].data[1];
             msg.waypoints.push_back(waypoint); 
         }
 
