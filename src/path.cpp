@@ -207,7 +207,9 @@ private:
 
         // Pubblica i coni filtrati
         RCLCPP_INFO(this->get_logger(), "--- Pubblico i coni filtrati ---");
+        publish_waypoint(Waypoints);
         publisher_filtered_cones_->publish(filtered_cones);
+
     }
 
     
@@ -321,50 +323,28 @@ private:
         y.push_back(p.data[1]);
     }
 
-    // Crea vettore t (intervallo normalizzato)
-    std::vector<double> t(Waypoints.size());
-    for (size_t i = 0; i < t.size(); ++i) {
-        t[i] = static_cast<double>(i) / (t.size() - 1);
-    }
-
     // Calcolo spline quadratiche
     std::vector<double> spline_x, spline_y;
     spapi(max_spline_degree_, x, spline_x);
     spapi(max_spline_degree_, y, spline_y);
 
-    // Punto finale spline
-    double x_end = fnval(spline_x, 1.0);
-    double y_end = fnval(spline_y, 1.0);
-    glm::vec2 punto_fine(x_end, y_end);
-/*
-    // Tangente nell'ultimo punto
-    double dx = fnval(spline_x, 1.0) - fnval(spline_x, 0.9);
-    double dy = fnval(spline_y, 1.0) - fnval(spline_y, 0.9);
-    glm::vec2 vettore_tangente(dx, dy);
-    vettore_tangente = glm::normalize(vettore_tangente);
-
-    // Calcola distanze
-    std::vector<double> distanze(adiacenti_correnti.size());
-    for (size_t i = 0; i < adiacenti_correnti.size(); ++i) {
-        glm::vec2 cono = adiacenti_correnti[i];
-        glm::vec2 vettore_cono = cono - punto_fine;
-        double distanza_perpendicolare = std::abs(glm::determinant(glm::dmat2(vettore_tangente, glm::dvec2(vettore_cono)))) / glm::length(vettore_tangente);
-        distanze[i] = distanza_perpendicolare;
+    // Valutazione spline per 'max_points' punti.
+    std::vector<glm::vec2> final_spline;
+    const float max_points = 200; // TODO: In YAML
+    const float step = 1/max_points;
+    
+    for(float i = 0; i < max_points; i+=step)
+    {
+        final_spline.push_back(
+            glm::vec2(
+                fnval(spline_x, i), // x
+                fnval(spline_y, i)  // y
+            )
+        );  
     }
+    
 
-    // Trova il minimo
-    auto min_it = std::min_element(distanze.begin(), distanze.end());
-    int indice_minimo = std::distance(distanze.begin(), min_it);
-    glm::vec2 cono_scelto = adiacenti_correnti[indice_minimo];
-*/
-    // Aggiorna punti
-    std::vector<glm::vec2> punti_aggiornati ;
-    for (const auto& p : Waypoints) {  
-    glm::vec2 vec(p.data[0], p.data[1]);  // Converte CustomPoint2D in glm::vec2
-    punti_aggiornati.push_back(vec);  
-    }
-
-    return punti_aggiornati;
+    publisher_spline_points(final_spline);
 }
 
 void spapi(int grado, const std::vector<double>& valori, std::vector<double>& spline)
@@ -400,17 +380,17 @@ double fnval(const std::vector<double>& spline, double t)
     /*--------------------PUBLISHERS--------------------*/
 
     //funzione publisher spline
-    void publish_spline_points(const std::vector<std::vector<float>>& punti_aggiornati)
+    void publish_spline_points(const std::vector<glm::vec2>& final_spline)
     {
         // Create the message
         auto msg = control_msgs::msg::WaypointArrayStamped();
         
         // Loop over the spline points and fill the message
-        for (size_t i = 0; i < punti_aggiornati.size(); ++i)
+        for (size_t i = 0; i < final_spline.size(); ++i)
         {
             auto spline_point = control_msgs::msg::Waypoint();
-            spline_point.position.x = punti_aggiornati[i][0];
-            spline_point.position.y = punti_aggiornati[i][1];
+            spline_point.position.x = final_spline[i].x;
+            spline_point.position.y = final_spline[i].y;
             msg.waypoints.push_back(spline_point);
         }
         
@@ -456,7 +436,6 @@ double fnval(const std::vector<double>& spline, double t)
     std::vector<double> xBlue, yBlue, xYellow, yYellow, xBigO, yBigO, xLittleO, yLittleO;
     std::vector<CustomPoint2D> Waypoints;
     zed_msgs::msg::Cones filtered_cones;
-    std::vector<glm::vec2> punti_aggiornati;
 
     // Subscribers and Publishers
     rclcpp::Subscription<zed_msgs::msg::Cones>::SharedPtr subscription_cones_;
@@ -476,61 +455,3 @@ int main(int argc, char** argv) {
     rclcpp::shutdown();
     return 0;
 }
-
-
-/*
-#include "CDT.h"
-
-
-struct CustomPoint2D{
-
-    double data[2];
-
-};
-
-struct CustomEdge{
-
-    std::pair<std::size_t, std::size_t> vertices;
-
-};
-class LoadDataNode : public rclcpp::Node {
-public: 
-     LoadDataNode() : Node("load_data_node") {
-        RCLCPP_INFO(this->get_logger(), "Node has started");
-
-        // containers other than std::vector will work toostd::vector<CustomPoint2D> points = ; 
-
-        std::vector<CustomEdge> edges;
-        std::vector<CustomPoint2D> points = {{1, 11}, {5, 5}, {5, 8}, {4, 10}, {-2, 11}, {-3, 10}, {-4, 8},
-                                            {8, 5}, {8, 8}, {6.5, 10.75}, {4.75, 13.5}, {1.64, 14.7},
-                                            {-2, 14}, {-4, 12.3}, {-5.32, 10.17}};
-        CDT::Triangulation<double> cdt;
-
-        cdt.insertVertices(
-
-            points.begin(),    points.end(),    [](const CustomPoint2D& p){ return p.data[0]; },
-
-            [](const CustomPoint2D& p){ return p.data[1]; }
-
-        );
-        
-        cdt.insertEdges(
-
-            edges.begin(),    edges.end(),    [](const CustomEdge& e){ return e.vertices.first; },
-
-            [](const CustomEdge& e){ return e.vertices.second; }
-
-        );
-        
-     }
-};
-
-int main(int argc, char** argv)
-{
-    rclcpp::init(argc, argv);
-    auto node = std::make_shared<LoadDataNode>();
-    rclcpp::spin(node);
-    rclcpp::shutdown();
-    return 0;
-}
-*/ 
