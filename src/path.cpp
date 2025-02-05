@@ -51,7 +51,7 @@ public:
         this->declare_parameter<int>("Spline_curvature_constrain_value", 0);
         this->declare_parameter<double>("Cones_filter_param_distance", 0.0);
         this->declare_parameter<double>("Cones_filter_param_y", 0.0);
-        this->declare_parameter<int>("Max_spline_degree", 0);
+        this->declare_parameter<int>("Max_spline_degree", 2);
 
         // Get parameters
         leng_ = this->get_parameter("Look_ahead_value").as_double();
@@ -108,9 +108,7 @@ public:
 private:
     void timer_callback(zed_msgs::msg::Cones msg_cones)
     {
-        std::vector<double> xBlue, yBlue, xYellow, yYellow, xBigO, yBigO, xLittleO, yLittleO;
-        zed_msgs::msg::Cones filtered_cones;
-
+         RCLCPP_INFO(this->get_logger(), "%d" ,msg_cones.blue_cones.size());
         // Esegui lo spacchettamento e filtraggio dei coni
         for (const auto &cone : msg_cones.big_orange_cones)
         {
@@ -136,8 +134,10 @@ private:
 
         for (const auto &cone : msg_cones.blue_cones)
         {
-            if (std::abs(cone.y) < filter_param_y_ && std::sqrt(cone.x * cone.x + cone.y * cone.y) < filter_param_distance_)
+            //if (std::abs(cone.y) < filter_param_y_ && std::sqrt(cone.x * cone.x + cone.y * cone.y) < filter_param_distance_)
             {
+                 RCLCPP_INFO(this->get_logger(), "push blu");
+
                 xBlue.push_back(cone.x);
                 yBlue.push_back(cone.y);
             }
@@ -145,8 +145,9 @@ private:
 
         for (const auto &cone : msg_cones.yellow_cones)
         {
-            if (std::abs(cone.y) < filter_param_y_ && std::sqrt(cone.x * cone.x + cone.y * cone.y) < filter_param_distance_)
+            //if (std::abs(cone.y) < filter_param_y_ && std::sqrt(cone.x * cone.x + cone.y * cone.y) < filter_param_distance_)
             {
+                RCLCPP_INFO(this->get_logger(), "push gialli");
                 xYellow.push_back(cone.x);
                 yYellow.push_back(cone.y);
             }
@@ -156,6 +157,7 @@ private:
         for (size_t i = 0; i < xLittleO.size(); ++i)
         {
             zed_msgs::msg::Cone little_orange_cone;
+            
             little_orange_cone.cone_type = 3;
             little_orange_cone.x = xLittleO[i];
             little_orange_cone.y = yLittleO[i];
@@ -175,6 +177,7 @@ private:
 
         for (size_t i = 0; i < xBlue.size(); ++i)
         {
+            RCLCPP_INFO(this->get_logger(), "dentro filtered");
             zed_msgs::msg::Cone blue_cone;
             blue_cone.cone_type = 2;
             blue_cone.x = xBlue[i];
@@ -192,13 +195,14 @@ private:
             yellow_cone.z = -1.3;
             filtered_cones.yellow_cones.push_back(yellow_cone);
         }
-        
+        RCLCPP_INFO(this->get_logger(), "%d %d", xBlue.size(), xYellow.size());
         //caso base delaunay ovvero almeno tre coni di diverso colore
         if((xBlue.size() >0 && xYellow.size() >0) && (xBlue.size() + xYellow.size() > 2))
         {
-            if((xBlue.size()>1 && xYellow.size()>0) || (xBlue.size()>0 && xYellow.size()>1))
+            if((xBlue.size()>1) || (xYellow.size()>1))
             {
-                Waypoints = delaunayCalculation();
+                 RCLCPP_INFO(this->get_logger(), "chiamo la funzione delaunay");
+                delaunayCalculation();
             }
         }
 
@@ -207,15 +211,14 @@ private:
 
         // Pubblica i coni filtrati
         RCLCPP_INFO(this->get_logger(), "--- Pubblico i coni filtrati ---");
-        publish_waypoint(Waypoints);
+        publish_waypoints(Waypoints);
         publisher_filtered_cones_->publish(filtered_cones);
 
     }
 
     
 
-    std::vector<CustomPoint2D> delaunayCalculation() {
-
+    void delaunayCalculation() {
         std::vector<CustomPoint2D> points;
         // Itera su ogni "cone" in filtered_cones (di tipo zed_msgs::msg::Cones) per convertire filtered_cones in custompoint2D
         for (const auto& cone : filtered_cones.blue_cones) {  
@@ -247,35 +250,53 @@ private:
             points.push_back(point);
         }
 
-
+         RCLCPP_INFO(this->get_logger(), "postt spacchettamento");
+        if(points.size()==0){RCLCPP_INFO(this->get_logger(), "!sexy");}
         std::vector<CustomEdge> edges;
-        CDT::Triangulation<double> cdt; 
-        cdt.eraseSuperTriangle();
+        CDT::Triangulation<float> cdt; 
+
+        //converto i punti in vertici per poter rimpire array vertici ed eliminare duplicati
+        std::vector<CDT::V2d<float>> pts;
+        for (const auto& point : points) {
+            pts.push_back({point.data[0], point.data[1]});
+            }
+
+        CDT::RemoveDuplicates<float>(pts);
+ 
 
         //triangolo
-        cdt.insertVertices(
+        cdt.insertVertices(pts);
+        
+        
+        cdt.eraseSuperTriangle();
 
-            points.begin(),    points.end(),    [](const CustomPoint2D& p){ return p.data[0]; },
-
-            [](const CustomPoint2D& p){ return p.data[1]; }
-        );
         //calcolo waypoints (punto centrale edges)
+        RCLCPP_INFO(this->get_logger(), "post insert vertex");
+
         CDT::EdgeUSet lati = CDT::extractEdgesFromTriangles(cdt.triangles);
-            bool foundBV1 = false;
-            bool foundBV2 = false;
+            if(cdt.triangles.size()==0){RCLCPP_INFO(this->get_logger(), "porco troio");}
+            //if(lati){RCLCPP_INFO(this->get_logger(), "ci sta");}
+           
             //controllo che gli edgedes stanno nel vettore xblue o xyellow 
             if((!xBlue.empty() && !yBlue.empty()))
             {
+                int foundBV1 = 0;
+                int foundBV2 = 0;
+                RCLCPP_INFO(this->get_logger(), "nell if");
+
                 for(auto lato : lati){
+                    RCLCPP_INFO(this->get_logger(), "nel for");
                     for(size_t i = 0; i < xBlue.size(); ++i)
                     {
                         if(cdt.vertices[lato.v1()].x == xBlue[i])
                         {
                             for(size_t j = 0; j < yBlue.size(); ++j)
                             {
+                                 
                                 if(cdt.vertices[lato.v1()].y == yBlue[j])
                                 {
-                                    bool foundBV1 = true;
+                                    foundBV1 = 1;
+                                    RCLCPP_INFO(this->get_logger(), " blue vero");
                                 }
                             }
                         }
@@ -284,21 +305,23 @@ private:
                     }
                     for(size_t i = 0; i < xBlue.size(); ++i)
                     {
-                   
                         if(cdt.vertices[lato.v2()].x == xBlue[i])
                         {
                             for(size_t i = 0; i < yBlue.size(); ++i)
                             {
                                 if(cdt.vertices[lato.v2()].y == yBlue[i])
                                 {
-                                    bool foundBV2 = true;
+                                    foundBV2 = 1;
+                                    RCLCPP_INFO(this->get_logger(), " giallo vero");
                                 }
                             }
                         }
                         lato.v2();
                     }
-                    if(foundBV1 ^ foundBV2) //XOR 
+                    RCLCPP_INFO(this->get_logger(), "%d %d", foundBV1, foundBV2);
+                    if(!foundBV1 != !foundBV2) //XOR 
                     {
+                        RCLCPP_INFO(this->get_logger(), "-----------------------XORR----------------------------");
                         double midX = (cdt.vertices[lato.v1()].x  + cdt.vertices[lato.v2()].x) / 2.0;     
                         double midY = (cdt.vertices[lato.v1()].y + cdt.vertices[lato.v2()].y) / 2.0;
                         Waypoints.push_back({midX, midY});
@@ -306,23 +329,21 @@ private:
                     }
                 }
             }
-
-            
-        return Waypoints;
         
     }
-    std::vector<glm::vec2> spline(const int max_spline_degree_, const  std::vector<CustomPoint2D>Waypoints) {
+    void spline(const int max_spline_degree_, const  std::vector<CustomPoint2D>Waypoints) {
     // DEBUG ONLY grado
     if (max_spline_degree_ != 2)
         throw std::invalid_argument("Grado non valido");
-
+    if(Waypoints.size()==0){ RCLCPP_INFO(this->get_logger(), "spline");}
+   
     // Estrai coordinate x e y
     std::vector<double> x, y;
     for (const auto& p : Waypoints) {
         x.push_back(p.data[0]);
         y.push_back(p.data[1]);
     }
-
+    
     // Calcolo spline quadratiche
     std::vector<double> spline_x, spline_y;
     spapi(max_spline_degree_, x, spline_x);
@@ -344,8 +365,8 @@ private:
     }
     
 
-    publisher_spline_points(final_spline);
-}
+    publish_spline_points(final_spline);
+    }
 
 void spapi(int grado, const std::vector<double>& valori, std::vector<double>& spline)
 {
