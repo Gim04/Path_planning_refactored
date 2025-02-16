@@ -7,6 +7,7 @@
 #include <cmath>
 #include <vector>
 #include <iostream>
+#include <fstream>
 
 #include "std_msgs/msg/string.hpp"
 #include "zed_msgs/msg/cones.hpp"
@@ -96,10 +97,10 @@ public:
             "/zed2i/topic_bbox_zed3d", 1, std::bind(&LoadDataNode::timer_callback, this, _1));
 
         // Publishers
-        publisher_waypoints_ = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoints", 1);
+        publisher_waypoints_ = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypointsc", 1);
       
         publisher_ref_waypoint_ = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Waypoint_filtered", 1);
-        publisher_spline_points_ = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Spline_Points", 1);
+        publisher_spline_points_ = this->create_publisher<control_msgs::msg::WaypointArrayStamped>("Spline", 1);
         publisher_special_case_ = this->create_publisher<path_interfaces::msg::Pubxy>("Special_case", 1);
         publisher_velocity_ = this->create_publisher<control_msgs::msg::RefData>("ReferenceData", 1);
         publisher_filtered_cones_ = this->create_publisher<zed_msgs::msg::Cones>("Filtered_Cones", 1);
@@ -270,10 +271,21 @@ private:
         
         cdt.eraseSuperTriangle();
 
+        CDT::EdgeUSet lati = CDT::extractEdgesFromTriangles(cdt.triangles);
+        std::ofstream File;
+
+        File.open("delaunay.txt");
+        File<<pts.size()<< " 0\n";
+
+        for (const auto& edge : lati) {
+            File << pts[edge.v1()].x << " " << pts[edge.v1()].y << std::endl;
+            File << pts[edge.v2()].x << " " << pts[edge.v2()].y << std::endl;
+            }
+
         //calcolo waypoints (punto centrale edges)
         RCLCPP_INFO(this->get_logger(), "post insert vertex");
 
-        CDT::EdgeUSet lati = CDT::extractEdgesFromTriangles(cdt.triangles);
+       
             if(cdt.triangles.size()==0){RCLCPP_INFO(this->get_logger(), "porco troio");}
             //if(lati){RCLCPP_INFO(this->get_logger(), "ci sta");}
            
@@ -319,7 +331,7 @@ private:
                         lato.v2();
                     }
                     RCLCPP_INFO(this->get_logger(), "%d %d", foundBV1, foundBV2);
-                    if(!foundBV1 != !foundBV2) //XOR 
+                    //if(!foundBV1 != !foundBV2) //XOR 
                     {
                         RCLCPP_INFO(this->get_logger(), "-----------------------XORR----------------------------");
                         double midX = (cdt.vertices[lato.v1()].x  + cdt.vertices[lato.v2()].x) / 2.0;     
